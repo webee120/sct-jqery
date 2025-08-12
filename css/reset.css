@@ -1,4 +1,12 @@
 @charset "uft-8";
+/* bezel */
+#wrap{
+  position: relative;
+}
+#wrap::before{}
+  
+#wrap::after{}
+
 
 /* reset.css */
 html{
