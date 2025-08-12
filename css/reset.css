@@ -4,7 +4,7 @@
   position: relative;
 }
 #wrap::before{}
-  
+
 #wrap::after{}
 
 
@@ -27,6 +27,7 @@ body{
   height: 100vh;
   border: 1px solid #000;
   margin: 0 auto;
+  position: relative;
 }
 table{
   border-collapse: collapse;
