@@ -1,0 +1,169 @@
+header{
+  top: 60px;
+  height: 50px;
+  width: 100%;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+header::before{
+  content: '';
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  border-bottom: 1px solid #333;
+  border-left: 1px solid #333;
+  transform: rotate(45deg) translateY(-50%);
+}
+
+header h1{
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+ .content {
+    margin-top: 139px;
+  }
+
+  .content li{
+    border-radius: 24px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
+  }
+
+  .content li a{
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    color: #999
+  }
+  /* 왼쪽 아이콘 & 제목 */
+  .content li a> div:first-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.6rem;
+    margin-right: 29px;
+  }
+
+  .content li a> div:first-child img {
+    margin-bottom: 6px;
+  }
+  /* 중앙 데이터 영역 */
+  .content li a> div:nth-child(2) {
+    flex: 2;
+  }
+  .content li a dl {
+    margin: 6px 0;
+  }
+  .content li a dt {
+    white-space: nowrap;
+    font-size: 1.4rem;
+    width: 80px;
+  }
+  .content li a dd {
+    margin: 0;
+    font-size: 1.4rem;
+    font-weight: bold;
+  }
+  .content li a span {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333
+  }
+  /* 오른쪽 점수 원형 */
+  .content li a> div:last-child {
+    text-align: center;
+    font-size: 1.4rem;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    align-items: center;
+  }
+
+  .content li a> div:last-child img{
+    width: 100%;
+  }
+
+  .content li a> div:last-child dl{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .content li a> div:last-child span {
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+
+  .report1 {
+    color: #306CE2;
+  }
+  
+  .report2 {
+    color: #68A0E2;
+  }
+
+  .report3 {
+    color: #96D0D2;
+  }
+
+  /*breathing---------------------------------------*/
+  .breath-name{
+    margin-top: 120px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #333;
+  }
+  .breath-name li{
+    position: relative;
+    width: calc(100% / 3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    font-weight: 600;
+  }
+  .breath-name li.active:after{
+    content: "";
+    display: block;
+    width: 21px;
+    height: 3px;
+    background-color: #5E90F1;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 3px 3px 0 0;
+  }
+  .score ul li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 32px 0;
+  }
+  .score-top{
+    width: 90px;
+    height: 90px;
+    background: url(../img/report_img/)no-repeat center center / cover;
+  }
+
+  .score-top dt{
+    font-size: 1.4rem;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+
+

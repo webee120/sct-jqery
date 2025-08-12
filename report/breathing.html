@@ -7,10 +7,99 @@
   <link rel="stylesheet" href="../css/font.css">
   <link rel="stylesheet" href="../css/reset.css">
   <link rel="stylesheet" href="../css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="report.css">
   <script src="../js/jquery-3.7.1.min.js"></script>
   <script src="../js/swiper-bundle.min.js"></script>
+  <script src="report.js"></script>
 </head>
 <body>
+  <div id="wrap">
+     <div class="bezel">
+      <ul class="pushbar">
+        <li>9:30</li>
+        <li></li>
+        <li></li>
+       </ul>
+     <div class="gesturebar"></div>
+   </div><!-- .bezel -->
+    <header>
+      <h1>호흡 세부정보</h1>
+    </header>
+    <section id="breath">
+      <ul class="breath-name">
+        <li class="active"><p>일간</p></li>
+        <li><p>주간</p></li>
+        <li><p>월간</p></li>
+      </ul>
+
+      <ul class="breath-list">
+        <li>
+          <div class="score">
+            <ul>
+              <li>
+                <dl class="score-top">
+                  <!-- <div><img src="../img/report_img/호흡 90.png" alt="호흡"></div> -->
+                  <dt><span>90</span>점</dt>
+                  <dd>정상</dd>
+                </dl>
+                <dl>
+                  <dt>2025년  7월 31일</dt>
+                  <dd>분당호흡수 <span>18</span>회</dd>
+                  <dd>산소포화도 <span>98</span>%</dd>
+                </dl>
+                <div><img src="../img/main_img/calendar.png" alt="calendar"></div>
+              </li>
+              <li>분당호흡수 <img src="../img/report_img/호흡1.png" alt="호흡1"></li>
+              <li>산소포화도 <img src="../img/report_img/호흡2.png" alt="호흡2"></li>
+            </ul>
+          </div>
+          <div class="report">
+            <div class="title">
+              <img src="../img/report_img/report_01.jpg" alt="호흡">
+              <h2>호흡 수치 분석</h2>
+            </div>
+            <div class="bar1">
+              <p>65세 이상 기준 / 분당호흡수(회)</p>
+              <ul>
+                <li>
+                  <div>12 미만</div>
+                  <div>12-20</div>
+                  <div>12 초과</div>
+                </li>
+                <li>
+                  <div>저호흡</div>
+                  <div>정상</div>
+                  <div>과호흡</div>
+                </li>
+              </ul>
+            </div>
+            <div class="bar2">
+              <p>65세 이상 기준 / 산소포화도(%)</p>
+              <ul>
+                <li>
+                  <div>80 이하</div>
+                  <div>90 이하</div>
+                  <div>91-94</div>
+                  <div>95-100</div>
+                </li>
+                <li>
+                  <div>나쁨</div>
+                  <div>경고</div>
+                  <div>주의</div>
+                  <div>정상</div>
+                </li>
+              </ul>
+            </div>
+            <div class="text">
+              <p>호흡 측정 결과는 분당 18회, 산소포화도는 98%로 정상 범위에 해당합니다. 이는 안정적인 호흡 상태를 의미하며, 전반적인 호흡기 건강이 양호한 것으로 보입니다. 주기적인 모니터링을 통해 건강을 유지하시는 것이 중요합니다.</p>
+            </div>
+          </div>
+        </li>
+
+        <li></li>
+        <li></li>
+      </ul>
+    </section>
   
 </body>
 </html>
