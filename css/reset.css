@@ -1,5 +1,40 @@
 @charset "uft-8";
 /* bezel */
+.bezel .pushbar{
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0 16px;
+  font-weight: 500;
+}
+.bezel .pushbar li:nth-child(2){
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.bezel .gesturebar{
+  width: calc(100% - 32px);
+  position: absolute;
+  bottom: 0;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bezel .gesturebar::before{
+  content: "";
+  display: block;
+  width: 108px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #000;
+}
+
 
 /* reset.css */
 html{
