@@ -154,7 +154,7 @@ header h1{
   .score-top{
     width: 90px;
     height: 90px;
-    background: url(../img/report_img/)no-repeat center center / cover;
+    background: url(../img/report_img/breath90.png)no-repeat center center / cover;
   }
 
   .score-top dt{
