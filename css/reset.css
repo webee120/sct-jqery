@@ -1,12 +1,5 @@
 @charset "uft-8";
 /* bezel */
-#wrap{
-  position: relative;
-}
-#wrap::before{}
-
-#wrap::after{}
-
 
 /* reset.css */
 html{
@@ -28,6 +21,7 @@ body{
   border: 1px solid #000;
   margin: 0 auto;
   position: relative;
+  padding: 0 16px;
 }
 table{
   border-collapse: collapse;
