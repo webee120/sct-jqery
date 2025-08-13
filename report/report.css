@@ -1,27 +1,30 @@
-header{
-  top: 60px;
-  height: 50px;
+header {
+  max-width: 720px;
   width: 100%;
-  display: flex;
-  position: relative;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
+  height: 50px;
+  position: fixed;
+  top: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  line-height: 55px;
 }
-header::before{
-  content: '';
-  width: 10px;
-  height: 10px;
+
+header::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: url(../img/main_img/arrow.png) no-repeat center / contain;
   position: absolute;
-  left: 0;
   top: 50%;
-  border-bottom: 1px solid #333;
-  border-left: 1px solid #333;
-  transform: rotate(45deg) translateY(-50%);
+  transform: translateY(-50%) rotate(90deg);
+  left: 16px;
 }
-header h1{
+
+header h1 {
   font-size: 2rem;
-  font-weight: 700;
+  font-weight: 800;
 }
 
  .content {
@@ -29,7 +32,7 @@ header h1{
   }
   .content li{
     border-radius: 24px;
-    box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
   }
   .content li a{
     padding: 25px;
@@ -106,14 +109,14 @@ header h1{
   }
 
   /*breathing---------------------------------------*/
-  .breath-name{
+  .name{
     margin-top: 120px;
     height: 40px;
     display: flex;
     justify-content: space-between;
     border-bottom: 2px solid #333;
   }
-  .breath-name li{
+  .name li{
     position: relative;
     width: calc(100% / 3);
     display: flex;
@@ -121,8 +124,9 @@ header h1{
     justify-content: center;
     font-size: 1.4rem;
     font-weight: 600;
+    cursor: pointer;
   }
-  .breath-name li.active:after{
+  .name li.active:after{
     content: "";
     display: block;
     width: 21px;
@@ -134,39 +138,61 @@ header h1{
     transform: translateX(-50%);
     border-radius: 3px 3px 0 0;
   }
-  .score ul li{
+  .s_tab.active:after{}
+
+  .day ul li{
     display: flex;
     justify-content: space-between;
     margin: 32px 8px;
   }
-  .score ul li:nth-child(2){
+  .day ul li:nth-child(2){
     margin: 20px 8px 10px;
     font-size: 1.2rem;
     font-weight: 600;
   }
-  .score ul li:last-child{
+  .day ul li:last-child{
     margin: 0 8px 32px;
     font-size: 1.2rem;
     font-weight: 600;
   }
-  .score-top{
+  .top{
     position: relative;
     width: 90px;
     height: 90px;
+  }
+  .breath_top{
     background: url(../img/report_img/breath90.png)no-repeat center center / cover;
   }
-  .score-top >dl{
+  .breath_top2{
+    background: url(../img/report_img/breath87.png)no-repeat center center / cover;
+  }
+  .heartrate_top{
+    background: url(../img/report_img/pulse75.png)no-repeat center center / cover;
+  }
+  .heartrate_top2{
+    background: url(../img/report_img/pulse81.png)no-repeat center center / cover;
+  }
+  .sleep_top{
+    background: url(../img/report_img/sleep94.png)no-repeat center center / cover;
+  }
+  .sleep_top2{
+    background: url(../img/report_img/sleep95.png)no-repeat center center / cover;
+  }
+  .sleep_top3{
+    background: url(../img/report_img/sleep96.png)no-repeat center center / cover;
+  }
+  .top >dl{
     font-size: 1.4rem;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
- .score-mid dt {
+ .mid dt {
     font-weight: 700;
     margin-bottom: 10px;
  }
-  .score-mid span {
+  .mid span {
     font-size: 1.8rem;
     font-weight: 700;
  }
@@ -178,16 +204,25 @@ header h1{
  }
  .report .title {
   display: flex;
+  align-items: center;
   gap: 10px;
-  font-size: 1.8rem;
-  font-weight: 700;
   margin-bottom: 16px;
  }
+ .report .title h2{
+  font-size: 1.8rem !important;
+  font-weight: 700;
+ }
+  .report .title img{
+    width: 19px;
+    height: 18px;
+  }
+
  .bar1 {
   width: 100%;
   height: 61px;
   border-radius: 10px;
   text-align: center;
+  margin: 24px 0;
  }
 .bar1 p{
   font-size: 0.8rem;
@@ -196,25 +231,227 @@ header h1{
 .bar1 ul li{
   display: flex;
   align-items: center;
+  height: 24px;
+  margin: 6px 8px;
 }
 .bar1 ul li>div{
   width: calc(100% / 3);
-  padding: 8px;
 }
 .gage1{
   font-size: 1.2rem;
   background-color: rgba(153, 153, 153, 0.15);
   border-radius: 20px;
-  margin: 8px 0;
 }
+
 .gage1>div:nth-child(2) {
   background-color: #306CE2;
   border-radius: 20px;
   color: #fff;
-  font-weight: 800;
+  font-weight: 700;
+  height: 100%;
+  line-height: 24px;
 }
+
 .pick {
   font-size: 1.4rem;
   font-weight: 700;
+  color: #333;
+}
+.gage2{
+  background-color: rgba(153,153,153,0.15);
+  border-radius: 18px;
+  position: relative;
+  flex-wrap: wrap;
+}
+.bar1 .gage2 > div{
+  font-size: 1.2rem;
+  background-color: rgba(153,153,153,0.15);
+  top: 0;
+  text-align: left;
+  border-radius: 17px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+}
+.bar1 .gage2 > div:nth-child(1){
+  width: 100%;
+}
+.bar1 .gage2 > div:nth-child(2){
+  position: absolute;
+  right: 0;
+  width: 75%;
+}
+.bar1 .gage2 > div:nth-child(3){
+  position: absolute;
+  right: 0;
+  width: 50%;
+}
+.bar1 .gage2 > div:nth-child(4){
+  position: absolute;
+  right: 0;
+  width: 25%;
+  background-color: #306CE2;
+  color: #fff;
+  font-weight: 700;
+}
+.bar1 .gage2 > div  p{
+  text-align: left;
+  font-size: 1.2rem;
+  position: absolute;
+  white-space: nowrap;
+}
+.bar1 .gage2 > div:nth-child(1)  p{
+  left: 12.5%;
+  transform: translateX(-50%);
+}
+.bar1 .gage2 > div:nth-child(2)  p{
+  left: calc(100% / 6);
+  transform: translateX(-50%);
+}
+.bar1 .gage2 > div:nth-child(3)  p{
+  left: 25%;
+  transform: translateX(-50%);
+}
+.bar1 .gage2 > div:nth-child(4)  p{
+  left: 50%;
+  transform: translateX(-50%);
 }
 
+
+.text p{
+  padding: 0 8px;
+  margin: 24px 0 30px;
+}
+.week ul li{
+  display: flex;
+  justify-content: space-between;
+  margin: 32px 8px;
+}
+.week ul li:nth-child(2){
+  margin: 20px 8px 10px;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.week ul li:last-child{
+  margin: 0 8px 32px;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.top2{
+  position: relative;
+  width: 90px;
+  height: 90px;
+}
+.top2 >dl{
+  font-size: 1.4rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.month ul li{
+  display: flex;
+  justify-content: space-between;
+  margin: 32px 8px;
+}
+.month ul li:nth-child(2){
+  margin: 20px 8px 10px;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.month ul li:last-child{
+  margin: 0 8px 32px;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.report div:nth-child(2) img{
+  margin-top: 20px;
+  width: 100%;
+}
+
+
+.graph img{
+  width: 100%;
+  height: auto;
+  margin: 20px auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  nav -------------------------------*/
+.maintab{
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 312px;
+  height: 61px;
+  display: flex;
+  border-radius: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
+} 
+.maintab li{
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.maintab li::before{
+  content: "";
+  display: block;
+  width: 25px;
+  height: 25px;
+}
+.maintab li:nth-child(1)::before{
+  background: url(../img/index_img/index_nav01.png) no-repeat center center/contain;
+}
+.maintab li:nth-child(2)::before{
+  background: url(../img/index_img/index_nav02.png) no-repeat center center/contain;
+}
+.maintab li:nth-child(3)::before{
+  background: url(../img/index_img/index_nav03.png) no-repeat center center/contain;
+}
+.maintab li:nth-child(4)::before{
+  background: url(../img/index_img/index_nav01.png) no-repeat center center/contain;
+}
+.maintab li.active::before{
+  filter: brightness(0) invert(1);
+}
+.maintab li a{
+  font-size: 1.1rem;
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 400;
+}
+.maintab li.active{
+  background-color: #5E90F1;
+}
+.maintab li.active a{
+  color: #fff;
+}
