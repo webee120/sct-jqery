@@ -25,7 +25,7 @@
     <header>
       <h1>심박수 세부정보</h1>
     </header>
-    <section id="breath">
+    <section id="heartrate">
       <ul class="name">
         <li class="active"><p>일간</p></li>
         <li><p>주간</p></li>
@@ -37,20 +37,22 @@
           <div class="day">
             <ul>
               <li>
-                <div class="top">
-                  <dl>
-                    <dt><span>75</span>점</dt>
-                    <dd>주의</dd>
+                <div class="left">
+                  <div class="top heartrate_top">
+                    <dl>
+                      <dt><span>75</span>점</dt>
+                      <dd>주의</dd>
+                    </dl>
+                  </div>
+                  <dl class="mid">
+                    <dt>2025년  7월 31일</dt>
+                    <dd>하루 평균 <span>68</span>bpm</dd>
+                    <dd>최고/최저 <span>120/70</span>bpm</dd>
                   </dl>
                 </div>
-                <dl class="mid">
-                  <dt>2025년  7월 31일</dt>
-                  <dd>하루 평균 <span>68</span>bpm</dd>
-                  <dd>최고/최저 <span>120/70</span>bpm</dd>
-                </dl>
                 <div class="calendar"><img src="../img/main_img/calendar.png" alt="calendar"></div>
               </li>
-              <li><img src="../img/report_img/report_06.png" alt="심박"></li>
+              <li class="graph"><img src="../img/report_img/report_06.png" alt="심박"></li>
 
             </ul>
           </div>
@@ -64,35 +66,20 @@
               <ul>
                 <li class="gage1">
                   <div>60 미만</div>
-                  <div>12-20</div>
-                  <div>20 초과</div>
+                  <div>60-80</div>
+                  <div>80 초과</div>
                 </li>
                 <li>
-                  <div>저호흡</div>
+                  <div>낮음</div>
                   <div class="pick">정상</div>
-                  <div>과호흡</div>
+                  <div>높음</div>
                 </li>
               </ul>
             </div>
-            <div class="bar1">
-              <p>65세 이상 기준 / 산소포화도(%)</p>
-              <ul>
-                <li class="gage2">
-                  <div><p>80 이하</p></div>
-                  <div><p>90 이하</p></div>
-                  <div><p>91-94</p></div>
-                  <div><p>95-100</p></div>
-                </li>
-                <li>
-                  <div>나쁨</div>
-                  <div>경고</div>
-                  <div>주의</div>
-                  <div class="pick">정상</div>
-                </li>
-              </ul>
-            </div>
+            
             <div class="text">
-              <p>호흡 측정 결과는 분당 18회, 산소포화도는 98%로 정상 범위에 해당합니다. 이는 안정적인 호흡 상태를 의미하며, 전반적인 호흡기 건강이 양호한 것으로 보입니다. 주기적인 모니터링을 통해 건강을 유지하시는 것이 중요합니다.</p>
+              <p>심박수 측정 결과는 전반적으로 안정적인 편이나,  오전 6시경과 오전 10시경, 오후 4시 이후 심박수가 120을 넘어서는 등 평소보다 높아진 양상을 보였습니다.</p>
+               <p>만약 높은 심박수가 자주 나타나거나 가슴 두근거림, 호흡 곤란과 같은 증상이 동반된다면 전문 의료기관을 방문하여 정확한 진단과 상담을 받아보는 것이 좋습니다. </p>
             </div>
           </div>
         </li>
@@ -101,37 +88,35 @@
           <div class="week">
             <ul>
               <li>
-                <div class="top2">
-                  <dl>
-                    <dt><span>89</span>점</dt>
-                    <dd>정상</dd>
+                <div class="left">
+                  <div class="top heartrate_top">
+                    <dl>
+                      <dt><span>76</span>점</dt>
+                      <dd>주의</dd>
+                    </dl>
+                  </div>
+                  <dl class="mid">
+                    <dt>2025년  7월 06일 ~ 7월 12일</dt>
+                    <dd>주간 평균 <span>68</span>bpm</dd>
+                    <dd>최고/최저 <span>126/74</span>bpm</dd>
                   </dl>
                 </div>
-                <dl class="mid">
-                  <dt>2025년  7월 06일 ~ 7월 12일</dt>
-                  <dd>분당호흡수 <span>16</span>회</dd>
-                  <dd>산소포화도 <span>96</span>%</dd>
-                </dl>
                 <div class="calendar"><img src="../img/main_img/calendar.png" alt="calendar"></div>
               </li>
-              <li>분당호흡수 <img src="../img/report_img/breath3.png" alt="호흡3"></li>
-              <li>산소포화도 <img src="../img/report_img/breath4.png" alt="호흡4"></li>
+              <li class="graph"><img src="../img/report_img/report_07.png" alt="심박"></li>
             </ul>
           </div>
           <div class="report">
             <div class="title">
-              <img src="../img/report_img/report_01.jpg" alt="호흡">
-              <h2>호흡 수치 분석</h2>
+              <img src="../img/report_img/report_02.png" alt="심박아이콘">
+              <h2>심박수 평균 수치 분석</h2>
             </div>
             <div>
-              <img src="../img/report_img/report_04.png" alt="분당호흡수 산소포화도">
+              <img src="../img/report_img/report_08.png" alt="심박">
             </div>
             <div class="text">
-              <p>주간 호흡 측정 결과 평균 분당호흡수는 16회, 평균 산소포화도는 93%로 나타났으며, 90점이라는 높은 점수를 받아 전반적으로 "정상" 범위의 호흡 상태를 유지하고 계신 것으로 보입니다. <br>
-                <div class="blank"></div>
-                분당 호흡수 그래프를 보면 대부분의 날짜에 12회에서 20회 사이의 정상 범위에 속하는 안정적인 호흡수를 보이고 있습니다. 산소포화도 역시 전반적으로 90% 이상을 유지하며 양호한 상태를 나타내고 있지만, 특히 7월 10일에는 90% 미만으로 잠시 떨어지는 경향을 보였으니 해당 날짜에 특별한 신체 활동이나 컨디션 변화가 있었는지 확인해보시는 것도 좋겠습니다.<br> 
-                <div class="blank"></div>
-                전반적으로는 건강한 호흡 패턴을 보이고 있으므로 현재의 좋은 상태를 꾸준히 유지하시는 것이 중요합니다.</p>
+              <p>주간 심박수 측정 결과 해당 주간의 주간 평균 심박수는 68bpm으로 나타났으며, 최고 심박수는 126bpm, 최저 심박수는 74bpm을 기록했습니다. 76점 주의라는 결과로 보아 안정적인 심박수를 최대한 유지하는 것을 목표로 삼으셔야합니다.</p>  
+              <p>최고 심박수 126bpm과 최저 심박수 74bpm은 일상적인 활동과 휴식 상태에서의 자연스러운 변동 범위 내에 있어, 심장이 다양한 상황에 잘 적응하고 있음을 보여줍니다. 현재의 건강한 심박수 패턴을 잘 유지하시어 지속적으로 심장 건강을 관리하시는 것이 중요합니다.</p>
             </div>
           </div>
         </li>
@@ -140,35 +125,36 @@
           <div class="month">
             <ul>
               <li>
-                <div class="top2">
-                  <dl>
-                    <dt><span>87</span>점</dt>
-                    <dd>정상</dd>
+                <div class="left">
+                  <div class="top heartrate_top2">
+                    <dl>
+                      <dt><span>81</span>점</dt>
+                      <dd>양호</dd>
+                    </dl>
+                  </div>
+                  <dl class="mid">
+                    <dt>2025년  7월</dt>
+                    <dd>주간 평균 <span>68</span>bpm</dd>
+                    <dd>최고/최저 <span>120/68</span>bpm</dd>
                   </dl>
                 </div>
-                <dl class="mid">
-                  <dt>2025년  7월</dt>
-                  <dd>분당호흡수 <span>17</span>회</dd>
-                  <dd>산소포화도 <span>95</span>%</dd>
-                </dl>
                 <div class="calendar"><img src="../img/main_img/calendar.png" alt="calendar"></div>
               </li>
-              <li>분당호흡수 <img src="../img/report_img/breath5.png" alt="호흡3"></li>
-              <li>산소포화도 <img src="../img/report_img/breath6.png" alt="호흡4"></li>
+              <li class="graph"><img src="../img/report_img/report_09.png" alt="심박"></li>
+
             </ul>
           </div>
           <div class="report">
             <div class="title">
-              <img src="../img/report_img/report_01.jpg" alt="호흡">
-              <h2>호흡 수치 분석</h2>
+              <img src="../img/report_img/report_02.png" alt="심박아이콘">
+              <h2>심박수 평균 수치 분석</h2>
             </div>
             <div>
-              <img src="../img/report_img/report_05.png" alt="분당호흡수 산소포화도">
+              <img src="../img/report_img/report_10.png" alt="심박">
             </div>
             <div class="text">
-              <p>월간 호흡 측정 결과 평균 분당 호흡수는 16회, 평균 산소포화도는 95%로 안정적인 호흡 상태를 유지하고 계신 것으로 보입니다. 분당 호흡수 그래프를 보면 한 달 내내 대부분의 날짜에 12회에서 20회 사이의 정상 범위 내에 꾸준히 머무르고 있어, 호흡 패턴이 매우 규칙적임을 알 수 있습니다. <br>
-               <div class="blank"></div>
-                산소포화도 역시 한 달 내내 큰 변화 없이 안정적으로 90% 이상을 유지하고 있습니다. 월간 데이터를 통해 볼 때, 전반적인 호흡 기능과 산소 공급 능력이 건강하게 유지되고 있음을 시사합니다. 현재와 같이 건강한 호흡 패턴을 잘 유지하시어 지속적으로 좋은 컨디션을 관리하시길 바랍니다.</p>
+              <p>월간 심박수 측정 결과는 68bpm으로 나타났으며, 최고 심박수는 120bpm, 최저 심박수는 68bpm을 기록했습니다. 전반적으로 매우 양호하고 건강한 심박수 패턴을 한 달 내내 유지하고 계신 것으로 판단됩니다.</p>
+              <p>최고 심박수 120bpm은 일상적인 활동이나 가벼운 운동 시 나타날 수 있는 수준이며, 최저 심박수 68bpm은 휴식 또는 수면 중의 안정적인 심박수로 보입니다. 현재의 좋은 심박수 상태를 유지하는 것을 목표로 삼으시고, 혹시라도 변화가 생긴다면 그 원인을 찾아보고 개선하려는 노력을 계속 기울이는 것이 장기적인 심장 건강에 매우 중요합니다.</p>
             </div>
           </div>
         </li>
