@@ -1,16 +1,147 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="../css/font.css">
-  <link rel="stylesheet" href="../css/reset.css">
-  <link rel="stylesheet" href="../css/swiper-bundle.min.css">
-  <script src="../js/jquery-3.7.1.min.js"></script>
-  <script src="../js/swiper-bundle.min.js"></script>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/font.css" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="sensor.css" />
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../js/swiper-bundle.min.js"></script>
+    <script src="sensor.js"></script>
+  </head>
+  <body>
+    <div id="wrap">
+      <div class="bezel">
+        <ul class="pushbar">
+          <li>9:30</li>
+          <li></li>
+          <li></li>
+        </ul>
+        <div class="gesturebar"></div>
+      </div>
+      <!-- .bezel -->
+
+      <header>
+        <div class="prev-btn">
+          <a href="#"></a>
+        </div>
+        <h1>침실</h1>
+        <div class="setting">
+          <a href="#"></a>
+        </div>
+      </header>
+
+      <section id="calendar">
+        <div class="top">
+          <h1>7월 2일</h1>
+          <div class="icon">
+            <img src="../img/main_img/calendar.png" alt="캘린더 아이콘" />
+          </div>
+        </div>
+        <!--.top-->
+
+        <div class="bottom">
+          <ul class="week">
+            <li class="red">일</li>
+            <li>월</li>
+            <li>화</li>
+            <li>수</li>
+            <li>목</li>
+            <li>금</li>
+            <li class="blue">토</li>
+          </ul>
+          <!--.week-->
+          <ul class="day">
+            <li>30</li>
+            <li>31</li>
+            <li>1</li>
+            <li class="active">2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+          </ul>
+          <!--.day-->
+        </div>
+        <!--.bottom-->
+      </section>
+      <!--#calendar-->
+
+      <section id="history">
+        <div class="sub-title">
+          <h2>침실 센서 내역</h2>
+
+          <div class="select" data-role="selectBox">
+            <span date-value="optValue" class="selected-option"
+              ><!-- 선택된 옵션 값이 출력되는 부분 --></span
+            >
+            <!-- 옵션 영역 -->
+            <ul class="hide">
+              <li>전체</li>
+              <li>동작감지</li>
+            </ul>
+          </div>
+        </div>
+        <!-- .sub-title -->
+      </section>
+      <!-- #history -->
+
+      <section id="history-list">
+        <ul>
+          <li class="movement">
+            <div class="info">
+              <span class="type">동작감지</span>
+              <span class="time">오후 6:41</span>
+            </div>
+            <h4>동작이 감지되었습니다.</h4>
+          </li>
+          <li class="movement">
+            <div class="info">
+              <span class="type">동작감지</span>
+              <span class="time">오후 6:07</span>
+            </div>
+            <h4>동작이 감지되었습니다.</h4>
+          </li>
+          <li class="movement">
+            <div class="info">
+              <span class="type">동작감지</span>
+              <span class="time">오후 4:26</span>
+            </div>
+            <h4>동작이 감지되었습니다.</h4>
+          </li>
+          <li class="movement">
+            <div class="info">
+              <span class="type">동작감지</span>
+              <span class="time">오후 1:18</span>
+            </div>
+            <h4>동작이 감지되었습니다.</h4>
+          </li>
+          <li class="movement">
+            <div class="info">
+              <span class="type">동작감지</span>
+              <span class="time">오전 11:50</span>
+            </div>
+            <h4>동작이 감지되었습니다.</h4>
+          </li>
+          <li class="movement">
+            <div class="info">
+              <span class="type">동작감지</span>
+              <span class="time">오전 09:24</span>
+            </div>
+            <h4>동작이 감지되었습니다.</h4>
+          </li>
+          <li class="movement">
+            <div class="info">
+              <span class="type">동작감지</span>
+              <span class="time">오전 06:40</span>
+            </div>
+            <h4>동작이 감지되었습니다.</h4>
+          </li>
+        </ul>
+      </section>
+    </div>
+    <!— #wrap —>
+  </body>
 </html>
