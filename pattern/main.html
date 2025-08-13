@@ -3,14 +3,133 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>생활 패턴</title>
   <link rel="stylesheet" href="../css/font.css">
   <link rel="stylesheet" href="../css/reset.css">
   <link rel="stylesheet" href="../css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="./pattern.css">
   <script src="../js/jquery-3.7.1.min.js"></script>
   <script src="../js/swiper-bundle.min.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="./pattern.js"></script>
 </head>
 <body>
-  
+  <div id="wrap">
+    <div class="bezel">
+      <ul class="pushbar">
+        <li>9:30</li>
+        <li></li>
+        <li></li>
+      </ul>
+      <div class="gesturebar"></div>
+    </div><!-- .bezel -->
+
+    <section id="calendar">
+      <div class="top">
+        <h1>7월 2일</h1>
+        <div class="icon">
+          <img src="../img/main_img/calendar.png" alt="캘린더 아이콘">
+        </div>
+      </div><!--.top-->
+
+      <div class="bottom">
+        <ul class="week">
+          <li class="red">일</li><li>월</li><li>화</li><li>수</li><li>목</li><li>금</li><li class="blue">토</li>
+        </ul><!--.week-->
+        <ul class="day">
+          <li>30</li><li>31</li><li>1</li><li class="active">2</li><li>3</li><li>4</li><li>5</li>
+        </ul><!--.day-->
+      </div><!--.bottom-->
+    </section><!--#calendar-->
+
+
+    <section id="graph">
+      <h2>생활 동선</h2>
+
+      <ul class="time">
+        <li>00:00</li><li>00:60</li><li>12:00</li><li>18:00</li><li>00:00</li>
+      </ul><!--.time-->
+
+      <div class="line1">
+        <img src="../img/pattern/icon_point.png" alt="포인트">
+        <img src="../img/pattern/icon_point.png" alt="포인트">
+        <img src="../img/pattern/icon_point.png" alt="포인트">
+        <img src="../img/pattern/icon_point.png" alt="포인트">
+      </div>
+      <div class="line2">
+        <img src="../img/pattern/icon_point.png" alt="포인트">
+        <img src="../img/pattern/icon_point.png" alt="포인트">
+        <img src="../img/pattern/icon_point.png" alt="포인트">
+        <img src="../img/pattern/icon_point.png" alt="포인트">
+      </div>
+      <div class="line3">
+        <img src="../img/pattern/icon_point.png" alt="포인트">
+        <img src="../img/pattern/icon_point.png" alt="포인트">
+        <img src="../img/pattern/icon_point.png" alt="포인트">
+        <img src="../img/pattern/icon_point.png" alt="포인트">
+      </div>
+      <div class="line4">
+        <img src="../img/pattern/icon_point.png" alt="포인트">
+        <img src="../img/pattern/icon_point.png" alt="포인트">
+        <img src="../img/pattern/icon_point.png" alt="포인트">
+        <img src="../img/pattern/icon_point.png" alt="포인트">
+      </div>
+    </section><!--#graph-->
+
+
+    <section id="schedule">
+      <div class="title">
+        <h2>외출 일정</h2>
+        <ul class="icon">
+          <li><a href="./addschedule.html"><img src="../img/index_img/index_11.png" alt="추가 아이콘"></a></li>
+          <li><a href="./routinecalendar.html"><img src="../img/main_img/setting.png" alt="설정 아이콘"></a></li>
+        </ul><!--.icon-->
+      </div><!--.title-->
+
+      <div class="content">
+        <ul class="week">
+          <li></li><li>일</li><li>월</li><li>화</li><li>수</li><li>목</li><li>금</li><li>토</li>
+        </ul><!--.week-->
+
+        <ul class="line">
+          <li>00</li><li></li><li></li><li></li><li></li><li></li>
+          <li><p class="item6">자녀집<br>방문</p></li><li></li>
+        </ul><!--.line-->
+        <ul class="line">
+          <li>06</li><li></li>
+          <li><p class="item1">노인<br>유치원</p></li>
+          <li><p class="item2">주민센터<br>방문</p></li>
+          <li></li><li></li><li></li><li></li>
+        </ul><!--.line-->
+        <ul class="line">
+          <li>12</li><li></li><li></li><li></li>
+          <li><p class="item3">노인<br>유치원</p></li>
+          <li><p class="item5">자녀집<br>방문</p></li><li></li><li></li>
+        </ul><!--.line-->
+        <ul class="line">
+          <li>18</li><li></li><li></li><li></li>
+          <li><p class="item4">병원</p></li>
+          <li></li><li><p class="item4">병원</p></li><li></li>
+        </ul><!--.line-->
+        <!--
+        
+        
+        
+        <p>자녀집<br>방문</p>
+        <p>병원</p>-->
+      </div><!--.content-->
+    </section><!--#schedule-->
+
+    <section id="navi">
+      <ul class="maintab">
+        <li class="active"><a href="#">홈</a></li>
+        <li><a href="#">생활패턴</a></li>
+        <li><a href="#">알림</a></li>
+        <li><a href="#">마이페이지</a></li>
+      </ul><!-- .maintab -->
+    </section><!--#navi-->
+
+  </div><!-- #wrap -->
 </body>
 </html>
