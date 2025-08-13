@@ -1,0 +1,75 @@
+@charset "utf-8";
+
+:root {
+  --main-color: #5e90f1;
+  --sub-color01: #609be1;
+  --sub-color02: #3f7aee;
+  --bg-color: #e7effd;
+}
+
+.bezel .pushbar {
+  background-color: #fff;
+}
+
+
+/* maintab */
+.maintab {
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 312px;
+  height: 61px;
+  display: flex;
+  border-radius: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+}
+.maintab li {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.maintab li::before {
+  content: "";
+  display: block;
+  width: 25px;
+  height: 25px;
+}
+.maintab li:nth-child(1)::before {
+  background: url(../img/index_img/index_nav01.png) no-repeat center
+    center/contain;
+}
+.maintab li:nth-child(2)::before {
+  background: url(../img/index_img/index_nav02.png) no-repeat center
+    center/contain;
+}
+.maintab li:nth-child(3)::before {
+  background: url(../img/index_img/index_nav03.png) no-repeat center
+    center/contain;
+}
+.maintab li:nth-child(4)::before {
+  background: url(../img/index_img/index_nav01.png) no-repeat center
+    center/contain;
+}
+.maintab li.active::before {
+  filter: brightness(0) invert(1);
+}
+.maintab li a {
+  font-size: 1.1rem;
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 400;
+}
+.maintab li.active {
+  background-color: #5e90f1;
+}
+.maintab li.active a {
+  color: #fff;
+}
+
+
