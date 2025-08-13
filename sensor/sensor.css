@@ -1,0 +1,119 @@
+header {
+  max-width: 720px;
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  top: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  line-height: 55px;
+}
+
+header::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: url(../img/main_img/arrow.png) no-repeat center / contain;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) rotate(90deg);
+  left: 16px;
+}
+
+header h1 {
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+header::after {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: url(../img/main_img/setting.png) no-repeat center / contain;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 16px;
+}
+
+#calendar{
+  padding: 20px 0;
+  margin-top: 110px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  }
+  #calendar .top{
+  position: relative;
+  margin-bottom: 20px;
+  display: flex;
+  padding: 0 7px;
+  justify-content: center;
+  align-items: center;
+  }
+  #calendar .top h1{
+  font-size: 2rem;
+  }
+  #calendar .top .icon{
+  position: absolute;
+  right: 20px;
+  cursor: pointer;
+  }
+  #calendar .top .icon img{
+  width: 100%;
+  }
+  #calendar .bottom ul{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 7px;
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  #calendar .bottom ul.week{
+    margin-bottom: 15px;
+  }
+  #calendar .bottom ul li{
+    width: 36px;
+  }
+  #calendar .bottom ul.week .red{
+    color: #FF0000;
+  }
+  #calendar .bottom ul.week .blue{
+    color: #0056FF;
+  }
+  #calendar .bottom ul.day li{
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: #3D5FA3;
+  }
+  #calendar .bottom ul.day li.active{
+    color: #fff;
+    background-color: #3F7AEE;
+  }
+
+  /* history */
+  #history {
+    padding: 20px 0 0;
+  }
+
+  #history .sub-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #history .sub-title select {
+    /* 여기부터 해야됨 ^^… */
+  }
+
+  select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  
+}
