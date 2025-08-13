@@ -17,7 +17,7 @@ header::before {
   display: block;
   width: 20px;
   height: 20px;
-  background: url(../img/main_img/arrow.png) no-repeat center / contain;
+  background: url(../../img/main_img/arrow.png) no-repeat center / contain;
   position: absolute;
   top: 50%;
   transform: translateY(-50%) rotate(90deg);
