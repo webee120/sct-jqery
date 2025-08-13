@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/font.css" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="mypage.css" />
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../js/swiper-bundle.min.js"></script>
+  </head>
+  <body>
+    <div id="wrap">
+      <div class="bezel">
+        <ul class="pushbar">
+          <li>9:30</li>
+          <li></li>
+          <li></li>
+        </ul>
+        <div class="gesturebar"></div>
+      </div>
+      <!-- .bezel -->
+
+      <header>
+        <div class="prev-btn">
+          <a href="main.html"></a>
+        </div>
+        <h1>보호자 정보</h1>
+      </header>
+
+      <section id="visual">
+        <div class="img">
+          <img src="../img/mypage_img/mypage_01.png" alt="보호자 대표 사진" />
+          <div class="edit">
+            <img src="../img/mypage_img/mypage_03.png" alt="사진 수정" />
+          </div>
+        </div>
+        <p>보호자</p>
+      </section>
+      <!-- #visual -->
+
+      <section id="info">
+        <form>
+          <fieldset>
+            <legend>회원 로그인</legend>
+            <ul class="input-box1">
+              <li>
+                <p>아이디</p>
+                <input type="text" placeholder="sct@esct.co.kr" />
+              </li>
+              <li class="pw verify">
+                <p>비밀번호</p>
+                <div class="inner">
+                  <input type="password" placeholder="*********" disabled />
+                  <a href="#">
+                    <span>변경</span>
+                  </a>
+                </div>
+              </li>
+              <li class="name cancel">
+                <p>이름</p>
+                <input type="text" placeholder="김경아" />
+              </li>
+              <li class="number cancel">
+                <p>휴대폰번호</p>
+                <input type="text" placeholder="01075212182" />
+              </li>
+              <li class="address verify">
+                <p>주소 (선택)</p>
+                <div class="inner">
+                  <input type="password" placeholder="47279" disabled />
+                  <a href="#">
+                    <span>주소검색</span>
+                  </a>
+                </div>
+                <input type="text" placeholder="부산광역시 부산진구 양정1동 413-7" />
+                <input type="text" placeholder="103동 701호" />
+              </li>
+            </ul>
+          </fieldset>
+        </form>
+      </section>
+      <!-- #info -->
+
+      <div class="bottom-btn down1">
+        <a href="main.html">
+          <p>확인</p>
+        </a>
+      </div>
+      <!-- .bottom-btn -->
+    </div>
+    <!-- #wrap -->
+  </body>
+</html>
