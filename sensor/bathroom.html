@@ -65,17 +65,56 @@
 
       <section id="history">
         <div class="sub-title">
-          <h2>화장실 감지내역</h2>
-          <form>
-            <select>
-              <option>전체</option>
-              <option>문열림</option>
-              <option>동작감지</option>
-            </select>
-          </form>
+          <h2>화장실 센서 내역</h2>
+
+          <div class="select" data-role="selectBox">
+            <span date-value="optValue" class="selected-option"
+              ><!-- 선택된 옵션 값이 출력되는 부분 --></span
+            >
+            <!-- 옵션 영역 -->
+            <ul class="hide">
+              <li>전체</li>
+              <li>문열림</li>
+              <li>동작감지</li>
+            </ul>
+          </div>
         </div>
+        <!-- .sub-title -->
       </section>
       <!-- #history -->
+
+      <section id="history-list">
+        <ul>
+          <li class="movement">
+            <div class="info">
+              <span class="type">동작감지</span>
+              <span class="time">오후 3:50</span>
+            </div>
+            <h4>동작이 감지되었습니다.</h4>
+          </li>
+          <li class="door">
+            <div class="info">
+              <span class="type">문열림</span>
+              <span class="time">오후 2:13</span>
+            </div>
+            <h4>현관문이 열렸습니다.</h4>
+          </li>
+          <li class="door">
+            <div class="info">
+              <span class="type">문열림</span>
+              <span class="time">오후 2:13</span>
+            </div>
+            <h4>현관문이 닫혔습니다.</h4>
+          </li>
+          <li class="movement">
+            <div class="info">
+              <span class="type">동작감지</span>
+              <span class="time">오전 11:07</span>
+            </div>
+            <h4>동작이 감지되었습니다.</h4>
+          </li>
+        </ul>
+      </section>
     </div>
     <!— #wrap —>
   </body>
