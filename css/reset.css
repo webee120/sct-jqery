@@ -69,6 +69,7 @@ body{
   color: #333;
 }
 #wrap{
+  overflow: scroll;
   max-width: 720px;
   min-width: 320px;
   width: 100%;

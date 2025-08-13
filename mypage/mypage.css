@@ -1,0 +1,230 @@
+@charset "utf-8";
+
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+}
+
+:root {
+  --main-color: #5e90f1;
+  --sub-color01: #609be1;
+  --sub-color02: #3f7aee;
+  --bg-color: #e7effd;
+}
+
+.bezel .pushbar {
+  background-color: #fff;
+}
+
+#wrap {
+  padding: 0;
+}
+
+/* profile */
+#profile {
+  margin-top: 52px;
+  background-color: var(--bg-color);
+  padding: 30px 16px 20px;
+}
+
+#profile .info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#profile .info .guardian .name {
+  font-weight: 800;
+  font-size: 2rem;
+}
+#profile .info .guardian .tag {
+  display: inline-block;
+  padding: 6px 12px;
+  font-weight: 600;
+  font-size: 1.4rem;
+  background-color: var(--main-color);
+  color: #fff;
+  border-radius: 20px;
+  line-height: 1;
+  margin-left: 6px;
+}
+
+#profile .info .version {
+  color: #999;
+  font-size: 1.2rem;
+}
+
+#profile .edit {
+  background: url(../img/main_img/arrow_right.png) no-repeat left 80px center /
+    contain;
+  background-size: 8px;
+}
+#profile .edit a {
+  display: inline-block;
+  width: 50vw;
+  margin: 12px 0;
+  color: #999;
+  font-size: 1.4rem;
+}
+
+#profile .subject a {
+  display: block;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+  margin-top: 26px;
+  border-radius: 12px;
+  padding: 16px 18px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  background: #fff url(../img/main_img/arrow_blue.png) no-repeat right 18px
+    center / contain;
+  background-size: 8px;
+}
+#profile .subject a .photo {
+  width: 45px;
+  height: 45px;
+}
+#profile .subject a .photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#profile .subject a .name {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+#profile .subject a .tag {
+  display: inline-block;
+  padding: 4px 8px;
+  font-weight: 600;
+  font-size: 1.2rem;
+  background-color: var(--bg-color);
+  color: var(--main-color);
+  border-radius: 20px;
+  line-height: 1;
+  margin-left: 6px;
+}
+
+#profile .subject a .number {
+  color: #999;
+  font-size: 1.4rem;
+  margin-top: 8px;
+}
+
+#profile .menu {
+  margin-top: 12px;
+  display: flex;
+  justify-content: space-between;
+}
+#profile .menu li {
+  width: calc((100% - 24px) / 3);
+  background-color: #fff;
+  padding: 12px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+#profile .menu li p {
+  margin-top: 8px;
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+
+#sub-list {
+  padding: 16px;
+}
+#sub-list li a {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  padding: 16px 8px;
+  background: url(../img/main_img/arrow_right.png) no-repeat center right 8px / contain;
+  background-size: 8px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 20px;
+  border-bottom: 1px solid #ddd;
+}
+#sub-list li a .icon {
+  width: 16px;
+}
+#sub-list li a .icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* .contact */
+.contact {
+  position: absolute;
+  width: 100%;
+  bottom: 110px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: #999;
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+/* maintab */
+.maintab {
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 312px;
+  height: 61px;
+  display: flex;
+  border-radius: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+}
+.maintab li {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.maintab li::before {
+  content: "";
+  display: block;
+  width: 25px;
+  height: 25px;
+}
+.maintab li:nth-child(1)::before {
+  background: url(../img/index_img/index_nav01.png) no-repeat center
+    center/contain;
+}
+.maintab li:nth-child(2)::before {
+  background: url(../img/index_img/index_nav02.png) no-repeat center
+    center/contain;
+}
+.maintab li:nth-child(3)::before {
+  background: url(../img/index_img/index_nav03.png) no-repeat center
+    center/contain;
+}
+.maintab li:nth-child(4)::before {
+  background: url(../img/index_img/index_nav01.png) no-repeat center
+    center/contain;
+}
+.maintab li.active::before {
+  filter: brightness(0) invert(1);
+}
+.maintab li a {
+  font-size: 1.1rem;
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 400;
+}
+.maintab li.active {
+  background-color: #5e90f1;
+}
+.maintab li.active a {
+  color: #fff;
+}
