@@ -1,0 +1,307 @@
+/* maintab */
+.maintab{
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 312px;
+  height: 61px;
+  display: flex;
+  border-radius: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
+}
+.maintab li{
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.maintab li::before{
+  content: "";
+  display: block;
+  width: 25px;
+  height: 25px;
+}
+.maintab li:nth-child(1)::before{
+  background: url(../img/index_img/index_nav01.png) no-repeat center center/contain;
+}
+.maintab li:nth-child(2)::before{
+  background: url(../img/index_img/index_nav02.png) no-repeat center center/contain;
+}
+.maintab li:nth-child(3)::before{
+  background: url(../img/index_img/index_nav03.png) no-repeat center center/contain;
+}
+.maintab li:nth-child(4)::before{
+  background: url(../img/index_img/index_nav01.png) no-repeat center center/contain;
+}
+.maintab li.active::before{
+   filter: brightness(0) invert(1);
+}
+.maintab li a{
+  font-size: 1.1rem;
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 400;
+}
+.maintab li.active{
+  background-color: #5E90F1;
+}
+.maintab li.active a{
+  color: #fff;
+}
+
+/* calendar */
+
+#calendar{
+  cursor: pointer;
+  padding: 20px 0;
+  margin-top: 52px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+#calendar .top{
+  position: relative;
+  margin-bottom: 20px;
+  display: flex;
+  padding: 0 7px;
+  justify-content: center;
+  align-items: center;
+}
+#calendar .top h1{
+  font-size: 2rem;
+}
+#calendar .top .icon{
+  position: absolute;
+  right: 20px;
+  cursor: pointer;
+}
+#calendar .top .icon img{
+  width: 100%;
+}
+#calendar .bottom ul{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 7px; 
+  font-size: 1.5rem; 
+  font-weight: 500;
+}
+#calendar .bottom ul.week{
+  margin-bottom: 15px;
+}
+#calendar .bottom ul li{
+  width: 36px;
+}
+#calendar .bottom ul.week .red{
+  color: #FF0000;
+}
+#calendar .bottom ul.week .blue{
+  color: #0056FF;
+}
+#calendar .bottom ul.day li{
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: #3D5FA3;
+}
+#calendar .bottom ul.day li.active{
+  color: #fff;
+  background-color: #3F7AEE;
+}
+
+/* alert */
+#alert{
+  padding-top: 10px;
+}
+#alert .alert-tab{
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+}
+#alert .alert-tab li{
+  height: 60px;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2px;
+  border-radius: 20px;
+}
+#alert .alert-tab li:first-child::before{
+  content: "";
+  display: block;
+  width: 25px;
+  height: 25px;
+  background: url(../img/alert_img/alert_05.png) no-repeat center center / contain;
+}
+#alert .alert-tab li:last-child::before{
+  content: "";
+  display: block;
+  width: 25px;
+  height: 25px;
+  background: url(../img/alert_img/alert.png)no-repeat center center / contain;
+}
+#alert .alert-tab li.active{
+  background-color: #5E90F1;
+}
+#alert .alert-tab li p{
+  color: #999;
+}
+#alert .alert-tab li.active p{
+  color: #fff;
+}
+#alert .alert-tab li.active::before{
+  filter: brightness(0) invert(100%);
+}
+.tab-cont{
+  padding-top: 10px;
+}
+
+.alert-empty{
+  text-align: center;
+  position: fixed;
+  left: 50%;
+  bottom: -422px;
+  transform: translateX(-50%);
+  font-weight: 600;
+  white-space: nowrap;
+  transition: color 0.3s ease-in-out;
+}
+.alert-empty p{
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #999;
+  padding-top: 15px;
+}
+
+/* cont1 */
+.cell{
+  position: fixed;
+  bottom: 110px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% - 32px);
+  max-width: 680px;
+  height: 52px;
+  border-radius: 8px;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #fff;
+  background-color: #5E90F1;
+} 
+
+#alert .tab-cont .emergency{
+  display: flex;
+  gap: 15px;
+  padding: 16px;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+}
+#alert .tab-cont .emergency::before{
+  display: block;
+  content: "";
+  width: 23px;
+  height: 23px;
+  background: url(../img/alert_img/alert_01.png)no-repeat center center / contain;
+}
+#alert .tab-cont li:first-child{
+  width: 100%;
+  background-color: #ff3a3025;
+}
+
+
+#alert .tab-cont > div >div{
+  display: flex;
+}
+
+#alert .tab-cont .radius{
+  line-height: 16px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  border: 1px solid #5E90F1;
+  border-radius: 30px;
+  color: #5E90F1;
+  padding: 0 8px;
+  height: 20px;
+  text-align: center;
+  display: inline-block;
+}
+
+#alert .tab-cont .time{
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #999;
+  display: inline-block;
+}
+
+#alert .tab-cont .bold{
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #333;
+  margin-top: 3px;
+}
+
+/* cont2 */
+#alert .tab-cont .bell::before{
+  display: block;
+  content: "";
+  width: 23px;
+  height: 23px;
+  background: url(../img/alert_img/alert_02.png)no-repeat center center / contain;
+}
+#alert .tab-cont .bell:nth-last-of-type(3)::before{
+  display: block;
+  content: "";
+  width: 23px;
+  height: 23px;
+  background: url(../img/alert_img/alert_03.png)no-repeat center center / contain;
+}
+
+#alert .tab-cont .bell:nth-last-of-type(2)::before{
+  display: block;
+  content: "";
+  width: 23px;
+  height: 23px;
+  background: url(../img/alert_img/alert_04.png)no-repeat center center / contain;
+}
+
+
+#alert .tab-cont .bell{
+  display: flex;
+  gap: 15px;
+  padding: 16px;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+}
+
+#alert .tab-cont .bell:first-child{
+  width: 100%;
+  background-color: #ffae001f;
+}
+
+
+#alert .tab-cont .bell > div >div{
+  display: flex;
+}
+
+#alert .tab-cont .bell .time{
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #999;
+  display: inline-block;
+}
+
+#alert .tab-cont .bell .bold{
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #333;
+  margin-top: 3px;
+}

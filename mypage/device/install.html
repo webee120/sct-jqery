@@ -7,10 +7,85 @@
   <link rel="stylesheet" href="../../css/font.css">
   <link rel="stylesheet" href="../../css/reset.css">
   <link rel="stylesheet" href="../../css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="device.css">
   <script src="../../js/jquery-3.7.1.min.js"></script>
   <script src="../../js/swiper-bundle.min.js"></script>
+  <script src="device.js"></script>
 </head>
 <body>
-  
+  <div id="wrap">
+    <div class="bezel">
+       <ul class="pushbar">
+         <li>9:30</li>
+          <li></li>
+          <li></li>
+        </ul>
+      <div class="gesturebar"></div>
+    </div><!-- .bezel -->
+
+    <div class="modal">
+    
+      <div class="wifiselect">
+        <h3>wifi 선택</h3>
+        <p>2.4GHz Wifi 만 지원됩니다.</p>
+        <ul class="wifilist">
+          <li>
+            <p><span>SCT Wifi 01</span></p>
+          </li>
+          <li>
+            <p><span>SCT Wifi 01</span></p>
+          </li>
+          <li>
+            <p><span>SCT Wifi 01</span></p>
+          </li>
+          <li>
+            <p><span>SCT Wifi 01</span></p>
+          </li>
+        </ul>
+        <div class="button">
+          취소
+        </div>
+      </div><!-- .wifiselect -->
+
+      <div class="complete">
+        <div class="compimg">
+          <img src="../../img/main_img/modal_01.png" alt="등록완료">
+        </div>
+        <h4 class="compmsg">등록완료</h4>
+        <p class="comptxt">허브 등록이 완료되었습니다.</p>
+        <a class="button" href="../../index.html">확인</a>
+      </div>
+
+    </div>
+
+    <header>
+        <div class="prev-btn">
+          <a href="management.html"></a>
+        </div>
+        <h1>허브 등록</h1>
+    </header>
+
+    <div class="hubimg">
+      <img src="../../img/seonsor_img/seonsor_05.png" alt="센서">
+    </div>
+    <ul class="hublist">
+      <li>
+        <p>paring 버튼을 <span>10초</span>간 길게 누르세요</p>
+      </li>
+      <li>
+        <p>삐 소리가 연속적으로 <span>3번</span> 울립니다</p>
+      </li>
+      <li>
+        <p>LED가 <span>보라색</span>으로 변할 때까지 <br> 페어링 버튼을 누르세요.</p>
+      </li>
+      <li>
+        <p>모두 준비되면 하단 <span>‘허브검색’</span>을 클릭하세요.</p>
+      </li>
+    </ul>
+
+    <div class="button">
+      허브 검색
+    </div>
+  </div><!-- #wrap -->
 </body>
 </html>
