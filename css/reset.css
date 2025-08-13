@@ -1,6 +1,7 @@
 @charset "uft-8";
 /* bezel */
 .bezel .pushbar{
+  max-width: 720px;
   /* background-color: #fff; */
   height: 52px;
   display: flex;
@@ -28,6 +29,7 @@
   background: url(../img/main_img/right\ icons.png);
 }
 .bezel .gesturebar{
+  max-width: 720px;
   width: calc(100%);
   background-color: #fff;
   position: fixed;
