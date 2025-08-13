@@ -1,8 +1,8 @@
     $(document).ready(function(){
 
-      $(".main .main-device .from-login").hide()
+      // $(".main .main-device .from-login").hide()
       $(".main .main-device .after-sethub").hide()
-      // $(".main .main-device .index-normal").hide()
+      $(".main .main-device .index-normal").hide()
 
       if (document.referrer.includes("/mypage/device/management.html")) {
         $(".main .main-device .from-login").show().siblings().hide();
@@ -10,6 +10,15 @@
       if (document.referrer.includes("/mypage/device/install.html")) {
         $(".main .main-device .after-sethub").show().siblings().hide();
       }
+      if (document.referrer.includes("/mypage/device/addevice.html")) {
+        $(".main .main-device .after-sethub").show().siblings().hide();
+      }
+      if (document.referrer.includes("/mypage/device/addevice2.html")) {
+        $(".main .main-device .index-normal").show().siblings().hide();
+      }
+
+
+
 
 
       const swiperindex = new Swiper('.indexswiper', {

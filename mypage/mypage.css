@@ -18,8 +18,41 @@
   background-color: #fff;
 }
 
-#wrap {
+#wrap.remove-pd {
   padding: 0;
+}
+#wrap.main-wrap {
+  overflow: hidden;
+}
+
+header {
+  max-width: 720px;
+  width: 100%;
+  height: 58px;
+  position: fixed;
+  top: 52px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  line-height: 52px;
+  z-index: 9;
+  background-color: #fff;
+}
+
+header .prev-btn a {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: url(../img/main_img/arrow.png) no-repeat center / contain;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) rotate(90deg);
+  left: 16px;
+}
+
+header h1 {
+  font-size: 2rem;
+  font-weight: 800;
 }
 
 /* profile */
@@ -140,7 +173,8 @@
   gap: 12px;
   align-items: center;
   padding: 16px 8px;
-  background: url(../img/main_img/arrow_right.png) no-repeat center right 8px / contain;
+  background: url(../img/main_img/arrow_right.png) no-repeat center right 8px /
+    contain;
   background-size: 8px;
   font-size: 1.4rem;
   font-weight: 500;
@@ -227,4 +261,187 @@
 }
 .maintab li.active a {
   color: #fff;
+}
+
+/* #visual */
+#visual {
+  margin-top: 130px;
+}
+
+#visual .img {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  margin: 0 auto;
+}
+#visual .img img {
+  width: 100%;
+}
+#visual .img .edit {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: #999;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+}
+#visual .img .edit img {
+  width: 12px;
+  height: 12px;
+  display: block;
+  margin: 6px auto;
+}
+#visual p {
+  margin: 8px auto;
+  text-align: center;
+  background-color: var(--bg-color);
+  width: 60px;
+  padding: 3px 0;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: var(--main-color);
+}
+
+/* bottom-btn */
+.bottom-btn {
+  position: absolute;
+  bottom: 42px;
+  left: 0;
+  padding: 0 16px;
+  width: 100%;
+}
+.bottom-btn.down1 {
+  bottom: -100px;
+}
+
+.bottom-btn a {
+  width: 100%;
+  height: 52px;
+  display: block;
+  background-color: var(--main-color);
+  border-radius: 8px;
+  position: relative;
+}
+.bottom-btn a p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+/* info */
+#info {
+  padding-bottom: 140px;
+}
+.input-box1 {
+  font-weight: 600;
+  font-size: 1.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: 20px;
+}
+
+.input-box1 input {
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  height: 52px;
+  color: #333;
+  width: 100%;
+  padding: 0 16px;
+  margin-top: 12px;
+}
+
+.input-box1 input::placeholder {
+  color: #333333;
+  gap: 20px;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.input-box1 li.verify .inner {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: center;
+  margin-top: 12px;
+}
+.input-box1 li.verify .inner input {
+  width: calc(75% - 8px);
+  margin-top: 0;
+}
+.input-box1 li.pw .inner input:disabled {
+  background-color: #fff;
+}
+.input-box1 li.verify a {
+  display: block;
+  background-color: var(--main-color);
+  color: #fff;
+  height: 52px;
+  border-radius: 8px;
+  width: calc(25% - 8px);
+  font-size: 1.4rem;
+  font-weight: 600;
+  position: relative;
+}
+.input-box1 li.verify a span {
+  position: absolute;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.input-box1 li.cancel input {
+  background: url(../img/main_img/cancel.png) no-repeat center right 16px /
+    contain;
+  background-size: 16px;
+}
+
+.gender {
+  margin-top: 12px;
+}
+
+input[type="radio"] {
+  width: 0;
+  height: 0;
+}
+input[type="radio"] + label {
+  display: inline-block;
+  position: relative;
+  min-height: 24px;
+  line-height: 24px;
+  padding-left: 30px;
+  color: #707070;
+}
+input[type="radio"] + label:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  background: #fff url("../../assets/login/w-check.png") no-repeat 50% 50%  /
+    contain;
+  border: 2px solid #5e90f1;
+  transition: all 0.5s;
+}
+input[type="radio"]:disabled + label:after {
+  background-color: #f2f2f2;
+}
+input[type="radio"]:checked + label:after {
+  background-color: #5e90f1;
+}
+input[type="radio"] + label h6 {
+  font-size: 1.6rem;
+  font-weight: 500;
 }
