@@ -138,6 +138,8 @@ header h1 {
     transform: translateX(-50%);
     border-radius: 3px 3px 0 0;
   }
+  .s_tab.active:after{}
+
   .day ul li{
     display: flex;
     justify-content: space-between;
@@ -157,7 +159,27 @@ header h1 {
     position: relative;
     width: 90px;
     height: 90px;
+  }
+  .breath_top{
     background: url(../img/report_img/breath90.png)no-repeat center center / cover;
+  }
+  .breath_top2{
+    background: url(../img/report_img/breath87.png)no-repeat center center / cover;
+  }
+  .heartrate_top{
+    background: url(../img/report_img/pulse75.png)no-repeat center center / cover;
+  }
+  .heartrate_top2{
+    background: url(../img/report_img/pulse81.png)no-repeat center center / cover;
+  }
+  .sleep_top{
+    background: url(../img/report_img/sleep94.png)no-repeat center center / cover;
+  }
+  .sleep_top2{
+    background: url(../img/report_img/sleep95.png)no-repeat center center / cover;
+  }
+  .sleep_top3{
+    background: url(../img/report_img/sleep96.png)no-repeat center center / cover;
   }
   .top >dl{
     font-size: 1.4rem;
@@ -296,8 +318,9 @@ header h1 {
 }
 
 
-.text{
-  padding: 24px 8px;
+.text p{
+  padding: 0 8px;
+  margin: 24px 0 30px;
 }
 .week ul li{
   display: flex;
@@ -318,7 +341,6 @@ header h1 {
   position: relative;
   width: 90px;
   height: 90px;
-  background: url(../img/report_img/breath87.png)no-repeat center center / cover;
 }
 .top2 >dl{
   font-size: 1.4rem;
@@ -343,11 +365,15 @@ header h1 {
   font-weight: 600;
 }
 .report div:nth-child(2) img{
-  margin: 20px auto;
+  margin-top: 20px;
   width: 100%;
 }
-.blank{
-  height: 30px;
+
+
+.graph img{
+  width: 100%;
+  height: auto;
+  margin: 20px auto;
 }
 
 
