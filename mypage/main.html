@@ -1,16 +1,143 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="../css/font.css">
-  <link rel="stylesheet" href="../css/reset.css">
-  <link rel="stylesheet" href="../css/swiper-bundle.min.css">
-  <script src="../js/jquery-3.7.1.min.js"></script>
-  <script src="../js/swiper-bundle.min.js"></script>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/font.css" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="mypage.css" />
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../js/swiper-bundle.min.js"></script>
+  </head>
+  <body>
+    <div id="wrap">
+      <div class="bezel">
+        <ul class="pushbar">
+          <li>9:30</li>
+          <li></li>
+          <li></li>
+        </ul>
+        <div class="gesturebar"></div>
+      </div>
+      <!-- .bezel -->
+
+      <section id="profile">
+        <div class="info">
+          <div class="guardian">
+            <span class="name">김경아</span>
+            <span class="tag">보호자</span>
+          </div>
+          <!-- .guardian -->
+
+          <div class="version">
+            <p>버전 정보 : 1.4.1</p>
+          </div>
+        </div>
+        <!-- .info -->
+        <div class="edit">
+          <a href="guardian.html"> 내 정보 변경 </a>
+        </div>
+
+        <div class="subject">
+          <a href="#">
+            <div class="photo">
+              <img
+                src="../img/mypage_img/mypage_02.png"
+                alt="대상자 프로필 사진"
+              />
+            </div>
+            <div>
+              <div>
+                <span class="name">김성환</span>
+                <span class="tag">대상자</span>
+              </div>
+              <p class="number">010-8154-2182</p>
+            </div>
+          </a>
+        </div>
+        <!-- .subject -->
+
+        <ul class="menu">
+          <li>
+            <a href="alarm.html">
+              <div class="icon">
+                <img src="../img/mypage_img/mypage_04.png" alt="알림 아이콘" />
+              </div>
+              <p>알림 설정</p>
+            </a>
+          </li>
+          <li>
+            <a href="device/management.html">
+              <div class="icon">
+                <img src="../img/mypage_img/mypage_06.png" alt="알림 아이콘" />
+              </div>
+              <p>기기 관리</p>
+            </a>
+          </li>
+          <li>
+            <a href="subscription.html">
+              <div class="icon">
+                <img src="../img/mypage_img/mypage_05.png" alt="알림 아이콘" />
+              </div>
+              <p>구독 관리</p>
+            </a>
+          </li>
+        </ul>
+        <!-- .menu -->
+      </section>
+      <!-- #profile -->
+
+      <section id="sub-list">
+        <ul>
+          <li>
+            <a href="guide.html">
+              <div class="icon">
+                <img src="../img/mypage_img/mypage_10.png" alt="이용 안내" />
+              </div>
+              <p>이용안내</p>
+            </a>
+          </li>
+          <li>
+            <a href="tos.html">
+              <div class="icon">
+                <img src="../img/mypage_img/mypage_09.png" alt="이용 약관" />
+              </div>
+              <p>이용약관</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="icon">
+                <img src="../img/mypage_img/mypage_08.png" alt="로그아웃" />
+              </div>
+              <p>로그아웃</p>
+            </a>
+          </li>
+          <li>
+            <a href="unsubscribe.html">
+              <div class="icon">
+                <img src="../img/mypage_img/mypage_07.png" alt="회원탈퇴" />
+              </div>
+              <p>회원탈퇴</p>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <p class="contact">
+        기기 오류 및 문의 사항 발생시 아래 연락처로 연락바랍니다. <br>
+        TEL) 051-710-7994 | MAIL) sct@esct.co.kr
+      </p>
+      <ul class="maintab">
+        <li class="active"><a href="#">홈</a></li>
+        <li><a href="#">생활패턴</a></li>
+        <li><a href="#">알림</a></li>
+        <li><a href="#">마이페이지</a></li>
+      </ul>
+      <!-- .maintab -->
+    </div>
+    <!-- #wrap -->
+  </body>
 </html>
