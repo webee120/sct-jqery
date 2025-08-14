@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
+  <title>alarm</title>
   <link rel="stylesheet" href="../css/font.css" />
   <link rel="stylesheet" href="../css/reset.css" />
   <link rel="stylesheet" href="../css/swiper-bundle.min.css" />
   <link rel="stylesheet" href="mypage_02.css" />
   <script src="../js/jquery-3.7.1.min.js"></script>
   <script src="../js/swiper-bundle.min.js"></script>
-
+  <script src="mypage_02.js"></script>
 </head>
 
  <body>
@@ -27,7 +27,7 @@
 
       <header>
         <div class="prev-btn">
-          <a href="#"></a>
+          <a href="../mypage/main.html"></a>
         </div>
         <h1>알림 설정</h1>
       </header>
@@ -52,7 +52,7 @@
           
           </div>
 
-          <div class="set">
+          <div class="set set2">
             <div class="block">
               <div class="one">PUSH 알림
                 <p class="two">
@@ -62,32 +62,63 @@
             </div>
 
             <label class="switch">
-              <input type="checkbox">
+              <input type="checkbox" class="toggle">
               <span class="slider"></span>
             </label>
           </div>
+
+          <div class="setbox">
+
+            <div class="alarmbox">
+              <p class="boxtext">현관</p>
+         
+              <label class="switch">
+                <input type="checkbox" class="toggle1">
+                <span class="slider"></span>
+              </label>
+            </div>
+
+            <div class="alarmbox">
+              <p class="boxtext">냉장고</p>
+         
+              <label class="switch">
+                <input type="checkbox" class="toggle1">
+                <span class="slider"></span>
+              </label>
+            </div>
+
+            <div class="alarmbox">
+              <p class="boxtext">화장실</p>
+         
+              <label class="switch">
+                <input type="checkbox" class="toggle1">
+                <span class="slider"></span>
+              </label>
+            </div>
+            
+            <div class="alarmbox">
+              <p class="boxtext">침실</p>
+         
+              <label class="switch">
+                <input type="checkbox" class="toggle1">
+                <span class="slider"></span>
+              </label>
+            </div>
+
+            <div class="alarmbox">
+              <p class="boxtext">외출 일정</p>
+          
+              <label class="switch">
+                <input type="checkbox" class="toggle1">
+                <span class="slider"></span>
+              </label>
+            </div>
+            
+          </div><!-- .setbox -->
 
         </div>
 
       </div><!-- .function -->
      
-
-
-
-
-
-
-
-      <button type="button" class="cell">확인</button>
-
-
-      <ul class="maintab">
-        <li><a href="#">홈</a></li>
-        <li><a href="#">생활패턴</a></li>
-        <li><a href="#">알림</a></li>
-        <li class="active"><a href="#">마이페이지</a></li>
-      </ul>
-      <!-- .maintab -->
-
   </body>
 </html>

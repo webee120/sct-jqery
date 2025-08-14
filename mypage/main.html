@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="mypage.css" />
     <script src="../js/jquery-3.7.1.min.js"></script>
     <script src="../js/swiper-bundle.min.js"></script>
+    <script src="mypage.js"></script>
   </head>
   <body>
     <div id="wrap" class="remove-pd main-wrap">
@@ -48,8 +49,9 @@
                 alt="대상자 프로필 사진"
               />
             </div>
+            <!-- .photo -->
             <div>
-              <div>
+              <div class="sub-name">
                 <span class="name">김성환</span>
                 <span class="tag">대상자</span>
               </div>
@@ -69,7 +71,7 @@
             </a>
           </li>
           <li>
-            <a href="device/management.html">
+            <a href="managing_sensor.html">
               <div class="icon">
                 <img src="../img/mypage_img/mypage_06.png" alt="알림 아이콘" />
               </div>
@@ -107,7 +109,7 @@
               <p>이용약관</p>
             </a>
           </li>
-          <li>
+          <li class="logout">
             <a href="#">
               <div class="icon">
                 <img src="../img/mypage_img/mypage_08.png" alt="로그아웃" />
@@ -127,16 +129,52 @@
       </section>
 
       <p class="contact">
-        기기 오류 및 문의 사항 발생시 아래 연락처로 연락바랍니다. <br>
+        기기 오류 및 문의 사항 발생시 아래 연락처로 연락바랍니다. <br />
         TEL) 051-710-7994 | MAIL) sct@esct.co.kr
       </p>
+
       <ul class="maintab">
-        <li><a href="#">홈</a></li>
-        <li><a href="#">생활패턴</a></li>
-        <li><a href="#">알림</a></li>
+        <li><a href="../index.html">홈</a></li>
+        <li><a href="../pattern/main.html">생활패턴</a></li>
+        <li><a href="../alert/main.html">알림</a></li>
         <li class="active"><a href="#">마이페이지</a></li>
       </ul>
       <!-- .maintab -->
+
+      <div class="caution">
+        <div class="pop-up">
+          <div class="alert-icon">
+            <img src="../img/main_img/modal_02.png" alt="오류">
+          </div>
+          <h3>로그아웃</h3>
+          <p>로그아웃 하시겠습니까?
+          </p>
+          <div class="btns">
+            <button type="button" class="prev">
+            이전
+          </button>
+            <button type="button" class="ok">
+            확인
+          </button>
+          </div>
+        </div>
+      </div>
+      <!--  -->
+
+      <div class="to-login">
+        <div class="pop-up">
+          <div class="alert-icon">
+            <img src="../img/main_img/modal_01.png" alt="확인">
+          </div>
+          <h3>로그아웃 완료</h3>
+          <p>로그인 페이지로 이동합니다.
+          </p>
+          <button type="button" class="ok">
+            확인
+          </button>
+        </div>
+      </div>
+      <!-- .to-login -->
     </div>
     <!-- #wrap -->
   </body>

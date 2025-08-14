@@ -120,12 +120,30 @@ header h1 {
   padding-top: 8px;
   font-size: 1.2rem;
   font-weight: 400;
+  color: #999;
 }
 
 .block{
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.ok{
+  background-color: #5e90f1;
+  color: #fff;
+  border-radius: 8px;
+  font-size: 2rem;
+  font-weight: 600;
+  height: 52px;
+  position: fixed;
+  bottom: 110px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% - 32px);
+  max-width: 680px;
+
+
 }
 
 /* check box - switch */
@@ -173,3 +191,84 @@ header h1 {
   transform:translateX(19px);
 }
 
+
+.alarmbox{
+  justify-content: space-between;
+  display: flex;
+  width: 100%;
+  height: 55px;
+  font-size: 1.4rem;
+  font-weight: 400;
+  background-color: #fff;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  margin-top: 22px;
+  margin-bottom: 15px;
+}
+
+.boxtext{
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin-top: 15px;
+  margin-left: 15px;
+}
+.alarmbox .switch{
+  margin-top: 15px;
+  margin-right: 20px;
+}
+
+/* tos */
+.server{
+  padding: 134px 0 0 0;
+}
+
+.servicebox a {
+  width: 100%;
+  height: 55px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+.servicetext a {
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+.servicephoto img{
+  height: 522px;
+}
+
+.s-text{
+  padding: 134px 20px 0 20px;
+}
+.s-text h4{
+  font-size: 2.3rem;
+  text-align: center;
+  padding-bottom: 20px;
+}
+.s-text h3{
+  padding-top: 20px;
+}
+
+.s-text p{
+  padding-top: 5px;
+  padding-left: 10px;
+}
+
+span{
+  padding-left: 20px;
+  padding-right: 5px;
+}
+.blank02{
+ margin-left: 40px;
+}
+.blank03{
+ margin-left: 30px;
+}
+.s-text strong{
+  color: blue;
+  font-weight: 400;
+}

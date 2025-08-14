@@ -39,6 +39,12 @@
       if (document.referrer.includes("/alert/main.html")) {
         $(".main .main-device .index-normal").show().siblings().hide();
       }
+      if (document.referrer.includes("/report/healthreport.html")) {
+        $(".main .main-device .index-normal").show().siblings().hide();
+      }
+      if (document.referrer.includes("/mypage/main.html")) {
+        $(".main .main-device .index-normal").show().siblings().hide();
+      }
 
 
 

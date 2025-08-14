@@ -55,6 +55,14 @@ header h1 {
   font-weight: 800;
 }
 
+.box-shadow {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+button {
+  cursor: pointer;
+}
+
 /* profile */
 #profile {
   margin-top: 52px;
@@ -124,6 +132,11 @@ header h1 {
   height: 100%;
   object-fit: cover;
 }
+#profile .subject a .sub-name {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
 #profile .subject a .name {
   font-size: 1.6rem;
   font-weight: 700;
@@ -137,7 +150,6 @@ header h1 {
   color: var(--main-color);
   border-radius: 20px;
   line-height: 1;
-  margin-left: 6px;
 }
 
 #profile .subject a .number {
@@ -313,7 +325,10 @@ header h1 {
   width: 100%;
 }
 .bottom-btn.down1 {
-  bottom: -100px;
+  bottom: -230px;
+}
+.bottom-btn.down2 {
+  bottom: -320px;
 }
 
 .bottom-btn a {
@@ -336,7 +351,7 @@ header h1 {
 
 /* info */
 #info {
-  padding-bottom: 140px;
+  padding-bottom: 150px;
 }
 .input-box1 {
   font-weight: 600;
@@ -405,43 +420,241 @@ header h1 {
   background-size: 16px;
 }
 
-.gender {
+.gender > div {
   margin-top: 12px;
+  display: flex;
+  justify-content: center;
+}
+.gender > div > div {
+  width: 48%;
 }
 
-input[type="radio"] {
-  width: 0;
-  height: 0;
+.gender > div input[type="radio"] {
+  display: none;
 }
-input[type="radio"] + label {
+
+.gender > div label {
   display: inline-block;
-  position: relative;
-  min-height: 24px;
-  line-height: 24px;
-  padding-left: 30px;
-  color: #707070;
+  width: 100%;
+  cursor: pointer;
 }
-input[type="radio"] + label:after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 20px;
-  height: 20px;
-  border-radius: 5px;
-  background: #fff url("../../assets/login/w-check.png") no-repeat 50% 50%  /
+.gender > div label h6 {
+  font-weight: 500;
+  font-size: 1.6rem;
+  margin-left: 30px;
+}
+.gender > div label {
+  background: url(../img/mypage_img/Checkbox_off.png) no-repeat center left /
     contain;
-  border: 2px solid #5e90f1;
-  transition: all 0.5s;
+  background-size: 16px 16px;
 }
-input[type="radio"]:disabled + label:after {
-  background-color: #f2f2f2;
+
+.gender > div input[type="radio"]:checked + label {
+  background: url(../img/mypage_img/Checkbox_on.png) no-repeat center left /
+    contain;
+  background-size: 16px 16px;
 }
-input[type="radio"]:checked + label:after {
-  background-color: #5e90f1;
-}
-input[type="radio"] + label h6 {
+
+.input-box1 select {
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  height: 52px;
+  color: #333;
+  width: 100%;
+  padding: 0 16px;
+  margin-top: 12px;
+  color: #333333;
   font-size: 1.6rem;
   font-weight: 500;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url(../img/main_img/arrow.png) no-repeat center right 16px /
+    contain;
+  background-size: 10px;
+}
+
+/* #subscription */
+#subscription {
+  margin-top: 130px;
+}
+
+#subscription > p {
+  font-weight: 500;
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+}
+
+#subscription > div {
+  border-radius: 8px;
+  padding: 20px 12px;
+}
+#subscription > div h4 {
+  font-size: 600;
+  font-size: 1.5rem;
+  margin-bottom: 12px;
+}
+#subscription > div .info {
+  display: flex;
+  justify-content: space-between;
+}
+#subscription > div .info p.date {
+  color: var(--main-color);
+  font-size: 1.2rem;
+}
+#subscription > div .info p.type {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+#subscription > p:nth-of-type(2) {
+  margin-top: 30px;
+}
+
+#subscription > input[type="text"] {
+  width: 100%;
+  display: block;
+  border-radius: 8px;
+  padding: 20px 12px;
+}
+#subscription > input[type="text"]::placeholder {
+  color: #999;
+  font-size: 1.4rem;
+}
+
+/* subscription 페이지 하단 버튼 */
+.bottom-btn.disable a {
+  background-color: #ddd;
+}
+
+/* subscription 오류 팝업 */
+.error,
+.confirm,
+.caution,
+.to-login {
+  position: fixed;
+  max-width: 720px;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(29, 29, 29, 0.5);
+  z-index: 999999;
+  display: none;
+}
+
+.pop-up {
+  background-color: #fff;
+  padding: 30px 20px;
+  border-radius: 18px;
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+  max-width: 688px;
+  width: calc(100% - 32px);
+  text-align: center;
+}
+
+.pop-up .alert-icon {
+  width: 56px;
+  height: 56px;
+  margin: 0 auto 30px;
+}
+.pop-up .alert-icon img {
+  width: 100%;
+}
+
+.pop-up h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.pop-up p {
+  font-size: 1.4rem;
+  margin-bottom: 30px;
+}
+
+.pop-up button {
+  display: block;
+  width: 100%;
+  height: 52px;
+  color: #fff;
+  background-color: var(--main-color);
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 52px;
+  border-radius: 8px;
+}
+.caution .pop-up .btns {
+  display: flex;
+  gap: 16px;
+}
+.caution .pop-up .btns .prev {
+  background-color: #ddd;
+}
+
+/* guide-list */
+.guide-list {
+  margin-top: 130px;
+  height: 75vh;
+}
+
+.guide-list ul li {
+  text-align: center;
+}
+
+.guide-list ul li h5 {
+  display: inline-block;
+  margin: 0 auto;
+  padding: 8px 10px;
+  font-weight: 700;
+  font-size: 1.6rem;
+  background-color: var(--bg-color);
+  color: var(--main-color);
+  border-radius: 40px;
+}
+
+.guide-list ul li .sub-title {
+  font-weight: 600;
+  font-size: 1.6rem;
+  margin: 16px 0 10px;
+}
+
+.guide-list ul li .txt {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+}
+
+.guide-list ul li .mobile {
+  width: 40vw;
+  margin: 0 auto;
+}
+.guide-list ul li .mobile img {
+  width: 100%;
+}
+
+.guide-list .swiper-pagination-bullet {
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  width: 8px;
+  height: 8px;
+}
+.guide-list .swiper-pagination-bullet-active {
+  width: 14px;
+  height: 8px;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* 기기관리 css 수정 */
+ul.channel .newregister > div:first-child h3::after{
+  content: "연결중";
+  font-size: 1.2rem;
+  color: var(--main-color);
+}
+
+ul.channel .newregister .addlist > li a > p {
+  color: #FF0000;
 }

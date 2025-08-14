@@ -34,10 +34,12 @@ header .prev-btn a {
   left: 16px;
 }
 
+
 header h1 {
   font-size: 2rem;
   font-weight: 800;
 }
+
 
  .content {
     margin-top: 139px;
@@ -59,7 +61,7 @@ header h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 1.6rem;
     margin-right: 29px;
   }
@@ -76,17 +78,21 @@ header h1 {
   .content li a dt {
     white-space: nowrap;
     font-size: 1.4rem;
+    font-weight: 500;
     width: 80px;
   }
   .content li a dd {
     margin: 0;
     font-size: 1.4rem;
-    font-weight: bold;
+    font-weight: 600;
+    color: #333;
   }
   .content li a span {
     font-size: 1.8rem;
-    font-weight: bold;
-    color: #333
+    font-weight: 900;
+    color: #333;
+    padding-left: 2px;
+    padding-right: 2px;
   }
   /* 오른쪽 점수 원형 */
   .content li a> div:last-child {
@@ -168,6 +174,24 @@ header h1 {
     justify-content: space-between;
     gap: 20px;
   }
+
+  .left span{
+    font-weight: 700;
+    color: #333;
+    font-size: 2rem;
+  }
+  .left dt{
+    font-weight: 400;
+    color: #999;
+    font-size: 1.4rem;
+  }
+
+  .left dd{
+    font-weight: 600;
+    color: #333;
+    font-size: 1.4rem;
+  }
+
   .day ul li:nth-child(2){
     margin: 20px 8px 10px;
     font-size: 1.2rem;
@@ -444,37 +468,43 @@ header h1 {
   display: flex;
   border-radius: 20px;
   background-color: #fff;
-  box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
 } 
 .maintab li{
   width: 25%;
+  border-radius: 20px;
+}
+.maintab li a{
+  width: 100%;
+  height: 100%;
   display: flex;
+  gap: 2px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 2px;
   border-radius: 20px;
-  cursor: pointer;
 }
-.maintab li::before{
+
+.maintab li a::before{
   content: "";
   display: block;
   width: 25px;
   height: 25px;
 }
-.maintab li:nth-child(1)::before{
+.maintab li:nth-child(1) a::before{
   background: url(../img/index_img/index_nav01.png) no-repeat center center/contain;
 }
-.maintab li:nth-child(2)::before{
+.maintab li:nth-child(2) a::before{
   background: url(../img/index_img/index_nav02.png) no-repeat center center/contain;
 }
-.maintab li:nth-child(3)::before{
+.maintab li:nth-child(3) a::before{
   background: url(../img/index_img/index_nav03.png) no-repeat center center/contain;
 }
-.maintab li:nth-child(4)::before{
+.maintab li:nth-child(4) a::before{
   background: url(../img/index_img/index_nav01.png) no-repeat center center/contain;
 }
-.maintab li.active::before{
+.maintab li.active a::before{
   filter: brightness(0) invert(1);
 }
 .maintab li a{
