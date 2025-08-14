@@ -7,10 +7,132 @@
   <link rel="stylesheet" href="../css/font.css">
   <link rel="stylesheet" href="../css/reset.css">
   <link rel="stylesheet" href="../css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./pattern.css">
   <script src="../js/jquery-3.7.1.min.js"></script>
   <script src="../js/swiper-bundle.min.js"></script>
+  <script src="./pattern.js"></script>
 </head>
 <body>
-  
+    <div id="wrap">
+
+    <div class="bezel">
+      <ul class="pushbar">
+        <li>9:30</li>
+        <li></li>
+        <li></li>
+      </ul>
+      <div class="gesturebar"></div>
+    </div><!-- .bezel -->
+
+    <header>
+      <div class="prev-btn">
+        <a href="./main.html"></a>
+      </div>
+      <h1>일정 관리</h1>
+      <div class="setting">
+        <a href="#"></a>
+      </div>
+    </header>
+
+    <section id="content">
+
+      <div class="option">
+        <ul>
+          <li class="active">전체</li>
+          <li>매일</li>
+          <li>매주</li>
+          <li>매달</li>
+        </ul>
+      </div><!--.option-->
+
+      <div class="item">
+        <ul>
+          <li id="all">
+            <section id="calendar">
+              <div class="top">
+                <h1>7월 2일</h1>
+                <div class="icon">
+                  <img src="../img/main_img/calendar.png" alt="캘린더 아이콘">
+                </div>
+              </div><!--.top-->
+
+              <div class="bottom">
+                <ul class="week">
+                  <li class="red">일</li><li>월</li><li>화</li><li>수</li><li>목</li><li>금</li><li class="blue">토</li>
+                </ul><!--.week-->
+                <ul class="day">
+                  <li class="grey">30</li><li class="grey">31</li><li class="line">1</li><li class="active">2</li><li>3</li><li>4</li><li>5</li>
+                </ul>
+                <ul class="day">
+                  <li class="line">6</li><li>7</li><li>8</li><li class="line">9</li><li>10</li><li>11</li><li>12</li>
+                </ul>
+                <ul class="day">
+                  <li>13</li><li class="line">14</li><li>15</li><li>16</li><li>17</li><li>18</li><li>19</li>
+                </ul>
+                <ul class="day">
+                  <li>20</li><li>21</li><li class="line">22</li><li class="line">23</li><li>24</li><li>25</li><li>26</li>
+                </ul>
+                <ul class="day">
+                  <li>27</li><li>28</li><li>29</li><li>30</li><li class="grey">1</li><li class="grey">2</li><li class="grey">3</li>
+                </ul>
+              </div><!--.bottom-->
+            </section><!--#calendar-->
+
+            <section id="schedule">
+
+              <ul class="box1">
+                <li class="txt-box">
+                  <span>오전 09:00 ~ 오전 10:00</span>
+                  <ul class="txt-flex">
+                    <li class="txt">동네 산책</li>
+                    <li class="repeat">매일</li>
+                  </ul><!--.txt-flex-->
+                </li>
+                <li class="trash"></li><!--.trash-->
+              </ul><!--.box1-->
+
+              <ul class="box2">
+                <li class="txt-box">
+                  <span>dhgn 01:30 ~ dhgn 03:30</span>
+                  <ul class="txt-flex">
+                    <li class="txt">병원 방문</li>
+                    <li class="repeat">목요일</li>
+                  </ul><!--.repeat-flex-->
+                </li>
+                <li class="trash"></li><!--.trash-->
+              </ul><!--.box2-->
+
+              <ul class="box3">
+                <li class="txt-box">
+                  <span>오후 03:30 ~ 오후 04:30</span>
+                  <ul class="txt-flex">
+                    <li class="txt">주민센터 방문</li>
+                  </ul><!--.txt-flex-->
+                </li>
+                <li class="trash"></li><!--.trash-->
+              </ul><!--.box3-->
+
+              <ul class="box4">
+                <li class="txt-box">
+                  <span>오후 05:30 ~ 오후 11:59</span>
+                  <ul class="txt-flex">
+                    <li class="txt">자녀 집 방문</li>
+                    <li class="repeat">화요일 / 목요일</li>
+                  </ul><!--.repeat-flex-->
+                </li>
+                <li class="trash"></li><!--.trash-->
+              </ul><!--.box4-->
+            </section><!--#schedule-->
+          </li><!--#all-->
+          <li></li>
+          <li></li> 
+          <li></li>
+        </ul>
+      </div><!--.item-->
+      
+    </section><!--#content-->
+
+  </div><!--#wrap-->
+
 </body>
 </html>

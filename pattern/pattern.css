@@ -601,7 +601,6 @@ label {
   justify-content: space-between;
   padding: 0 25px;
   text-align: center;
-  ㅠㅐㄱ
 }
 #time .setting li:first-child, #time .setting li:last-child{
   width: calc((100% - 30px) / 2);
@@ -629,10 +628,421 @@ label {
 #timeset ul{
   display: flex;
   justify-content: space-between;
+  height: 100%;
 }
 #timeset ul li{
   width: calc(100% / 3);
   font-size: 1.8rem;
   font-weight: 500;
   color: #999;
+  height: 100%;
+  cursor: pointer;
+}
+#timeset ul li .active{
+  color: black;
+}
+
+
+/* #timegap */
+#timegap{
+  padding: 25px 5px;
+  border-bottom: 1px solid #ddd;
+}
+#timegap .flex{
+  display: flex;
+  justify-content: space-between;
+}
+#timegap .flex .tit{
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+#timegap .flex .selet{
+  display: flex;
+  gap: 10px;
+}
+#timegap .flex .selet li{
+  padding: 5px 15px;
+  border-radius: 50px;
+  background-color: #E7EFFD;
+  font-size: 1.4rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+#timegap .flex .selet li.active{
+  background-color: #5E90F1;
+  color: white;
+}
+
+#timegap span{
+  font-size: 1.2rem;
+  color: #999;
+  display: block;
+  padding-top: 20px;
+}
+
+
+#repeat{
+  padding: 25px 5px;
+  border-bottom: 1px solid #ddd;
+}
+#repeat .flex{
+  display: flex;
+  justify-content: space-between;
+}
+#repeat .flex .tit{
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+#repeat .flex .select{
+  display: flex;
+  gap: 10px;
+}
+#repeat .flex .select li{
+  font-size: 1.4rem;
+  font-weight: 500;
+  padding: 5px 15px;
+  background-color: #E7EFFD;
+  border-radius: 50px;
+  cursor: pointer;
+}
+#repeat .flex .select li.active{
+  background-color: #5E90F1;
+  color: white ;
+}
+
+#repeat .week{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+#repeat .week li{
+  padding: 10px 13px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  border: 1px solid #C2D5FA;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#repeat .week .active{
+  background-color: #E7EFFD;
+  color: #3F7AEE;
+  font-weight: 700;
+}
+
+
+#repeat .month .toggle{
+  padding: 20px 0 10px;
+  display: flex;
+  justify-content: end;
+}
+
+#repeat .month .month-select{
+  margin-bottom: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+#repeat .month .month-select li{
+  padding: 5px 15px;
+  background-color: #E7EFFD;
+  border-radius: 50px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+#repeat .month .month-select .active{
+  background-color: #5E90F1;
+  color: white;
+}
+
+#repeat .month .month-slide{
+  padding: 15px 0;
+  background-color: #E7EFFD;
+  text-align: center;
+}
+
+#repeat .month .month-slide li{
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #999;
+  cursor: pointer;
+}
+
+#repeat .month .month-slide .active{
+  color: black;
+}
+
+#repeat .month p{
+  font-size: 1.2rem;
+  color: #999;
+  margin-top: 10px;
+  display: flex;
+  justify-content: end;
+}
+
+
+/* bottom-btn */
+.bottom-btn {
+  position: absolute;
+  bottom: 42px;
+  left: 0;
+  padding: 0 16px;
+  width: 100%;
+}
+.bottom-btn a {
+  width: 100%;
+  height: 52px;
+  display: block;
+  background-color: #5E90F1;
+  border-radius: 8px;
+  position: relative;
+}
+.bottom-btn a p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+
+/* 일정 관리 */
+.option{
+  padding: 120px 5px 20px;
+  border-bottom: 1px solid #ddd;
+}
+.option ul{
+  display: flex;
+  gap: 10px;
+}
+.option ul li{
+  font-size: 1.4rem;
+  font-weight: 500;
+  padding: 5px 15px;
+  background-color: #E7EFFD;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.option ul .active{
+  background-color: #5E90F1;
+  color: white;
+}
+
+
+
+.item #all #calendar{
+  margin-top: 0;
+  padding: 20px 0 10px;
+}
+
+.item #all #calendar .bottom .day{
+  margin-bottom: 10px;
+}
+
+.item #all #calendar .bottom .day .grey{
+  color: #999;
+}
+
+.item #all #calendar .bottom .day li{
+  position: relative;
+}
+
+.item #all #calendar .bottom .day .line::before{
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #A7CCF8;
+  position: absolute;
+  bottom: 0;
+}
+
+.item #all #schedule{
+  padding: 20px 5px;
+}
+
+.item #all #schedule > ul{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.item #all #schedule > ul:last-child{
+  margin-bottom: 0;
+}
+
+.item #all #schedule > ul::before{
+  content: "";
+  display: block;
+  width: 5px;
+  height: 52px;
+}
+
+.item #all #schedule > 
+
+.item #all #schedule .txt-box span{
+  display: block;
+  color: #999;
+  margin-bottom: 10px;
+}
+
+.item #all #schedule .txt-box .txt-flex{
+  display: flex;
+  gap: 10px;
+}
+.item #all #schedule .txt-box .txt{
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+.item #all #schedule .txt-box .repeat{
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 2px 7px 2px 23px;
+  background-color: #E7EFFD;
+  color: #5E90F1;
+  border-radius: 30px;
+  position: relative;
+}
+
+.item #all #schedule .txt-box .repeat::before{
+  display: block;
+  content: "";
+  width: 11px;
+  height: 8px;
+  background: url(../img/pattern/pattern_06.png) no-repeat center / cover;
+  position: absolute;
+  left: 7px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.item #all #schedule .trash{
+  width: 11px;
+  height: 14px;
+  background: url(../img/pattern/pattern_07.png) no-repeat center / cover;
+  margin-top: 19px;
+  cursor: pointer;
+}
+
+
+/* 일정 관리 */
+.option{
+  padding: 120px 5px 20px;
+  border-bottom: 1px solid #ddd;
+}
+.option ul{
+  display: flex;
+  gap: 10px;
+}
+.option ul li{
+  font-size: 1.4rem;
+  font-weight: 500;
+  padding: 5px 15px;
+  background-color: #E7EFFD;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.option ul .active{
+  background-color: #5E90F1;
+  color: white;
+}
+
+
+
+.item #all #calendar{
+  margin-top: 0;
+  padding: 20px 0 10px;
+}
+
+.item #all #calendar .bottom .day{
+  margin-bottom: 10px;
+}
+
+.item #all #calendar .bottom .day .grey{
+  color: #999;
+}
+
+.item #all #calendar .bottom .day li{
+  position: relative;
+}
+
+.item #all #calendar .bottom .day .line::before{
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #A7CCF8;
+  position: absolute;
+  bottom: 0;
+}
+
+.item #all #schedule{
+  padding: 20px 5px;
+}
+
+.item #all #schedule > ul{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.item #all #schedule > ul:last-child{
+  margin-bottom: 0;
+}
+
+.item #all #schedule > ul::before{
+  content: "";
+  display: block;
+  width: 5px;
+  height: 52px;
+}
+
+.item #all #schedule > 
+
+.item #all #schedule .txt-box span{
+  display: block;
+  color: #999;
+  margin-bottom: 10px;
+}
+
+.item #all #schedule .txt-box .txt-flex{
+  display: flex;
+  gap: 10px;
+}
+.item #all #schedule .txt-box .txt{
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+.item #all #schedule .txt-box .repeat{
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 2px 7px 2px 23px;
+  background-color: #E7EFFD;
+  color: #5E90F1;
+  border-radius: 30px;
+  position: relative;
+}
+
+.item #all #schedule .txt-box .repeat::before{
+  display: block;
+  content: "";
+  width: 11px;
+  height: 8px;
+  background: url(../img/pattern/pattern_06.png) no-repeat center / cover;
+  position: absolute;
+  left: 7px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.item #all #schedule .trash{
+  width: 11px;
+  height: 14px;
+  background: url(../img/pattern/pattern_07.png) no-repeat center / cover;
+  margin-top: 19px;
+  cursor: pointer;
 }
