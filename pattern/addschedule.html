@@ -10,7 +10,6 @@
   <link rel="stylesheet" href="./pattern.css">
   <script src="../js/jquery-3.7.1.min.js"></script>
   <script src="../js/swiper-bundle.min.js"></script>
-  <script src="../js/main.js"></script>
   <script src="./pattern.js"></script>
 </head>
 <body>
@@ -126,8 +125,101 @@
           </li><!--.slide3-->
         </ul>
       </div><!--#timeset-->
+
+      <div id="timegap">
+        <ul class="flex">
+          <li class="tit">오차</li>
+          <li>
+            <ul class="selet">
+              <li class="active">없음</li>
+              <li>15분</li>
+              <li>30분</li>
+            </ul><!--.selet-->
+          </li>
+        </ul>
+        <span>정해진 외출 시간내에 외출을 하지 않을경우,<br>
+        해당 시간을 초과하면 알림이 발송됩니다.</span>
+      </div><!--#timegap-->
+
+
+      <div id="repeat">
+        <ul class="flex">
+          <li class="tit">반복</li>
+          <li>
+            <ul class="select">
+              <li class="active">없음</li>
+              <li>매일</li>
+              <li class="select-week">매주</li>
+              <li class="select-month">매달</li>
+            </ul><!--.selet-->
+          </li>
+        </ul><!--.flex-->
+
+        <ul class="week">
+          <li class="active">월</li><li>화</li><li>수</li><li>목</li><li>금</li><li>토</li><li>일</li>
+        </ul><!--.week-->
+
+        <div class="month">
+          <div class="toggle">
+            <fieldset>
+              <label>
+                <span>공휴일 제외</span>
+                <input role="switch" type="checkbox" class="aa"/>
+              </label>
+            </fieldset>
+          </div><!--.toggle-->
+
+          <ul class="month-select">
+            <li class="active">전일</li><li>후일</li>
+          </ul><!--.month-select-->
+
+          <div class="swiper month-slide">
+            <ul class="swiper-wrapper">
+              <li class="swiper-slide active">1일</li>
+              <li class="swiper-slide">2일</li>
+              <li class="swiper-slide">3일</li>
+              <li class="swiper-slide">4일</li>
+              <li class="swiper-slide">5일</li>
+              <li class="swiper-slide">6일</li>
+              <li class="swiper-slide">7일</li>
+              <li class="swiper-slide">8일</li>
+              <li class="swiper-slide">9일</li>
+              <li class="swiper-slide">10일</li>
+              <li class="swiper-slide">11일</li>
+              <li class="swiper-slide">12일</li>
+              <li class="swiper-slide">13일</li>
+              <li class="swiper-slide">14일</li>
+              <li class="swiper-slide">15일</li>
+              <li class="swiper-slide">16일</li>
+              <li class="swiper-slide">17일</li>
+              <li class="swiper-slide">18일</li>
+              <li class="swiper-slide">19일</li>
+              <li class="swiper-slide">20일</li>
+              <li class="swiper-slide">21일</li>
+              <li class="swiper-slide">22일</li>
+              <li class="swiper-slide">23일</li>
+              <li class="swiper-slide">24일</li>
+              <li class="swiper-slide">25일</li>
+              <li class="swiper-slide">26일</li>
+              <li class="swiper-slide">27일</li>
+              <li class="swiper-slide">28일</li>
+              <li class="swiper-slide">29일</li>
+              <li class="swiper-slide">30일</li>
+              <li class="swiper-slide">말일</li>
+            </ul>
+          </div><!--.month-slide-->
+          <p>*전/후일 가장 가까운 날로 적용됩니다</p>
+        </div><!--.month-->
+      </div><!--#repeat-->
       
     </section><!--#content-->
+
+    <div class="bottom-btn">
+      <a href="./main.html">
+        <p>확인</p>
+      </a>
+    </div><!--.bottom-btn-->
+
 
 
   </div><!--#wrap-->
