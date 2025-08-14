@@ -105,6 +105,12 @@ ul.channel .newregister .addlist > li a > p{
   font-weight: 700;
 }
 
+ul.channel .newregister .addlist > li a div div p:nth-child(2) {
+  color: #999;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
 
 /* install */
 div.hubimg{
