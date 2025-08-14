@@ -1,5 +1,5 @@
 @charset "utf-8";
-.bezel .pushbar{
+.bezel .pushbar {
   background-color: #fff;
 }
 
@@ -28,7 +28,7 @@ header .prev-btn a {
   transform: translateY(-50%) rotate(90deg);
   left: 16px;
 }
-header .deviceadd a{
+header .deviceadd a {
   display: block;
   width: 20px;
   height: 20px;
@@ -44,14 +44,14 @@ header h1 {
   font-weight: 800;
 }
 
-ul.channel{
+ul.channel {
   margin-top: 130px;
   padding-bottom: 50px;
 }
-ul.channel .newregister > div:not(:last-child){
+ul.channel .newregister > div:not(:last-child) {
   margin-bottom: 20px;
 }
-ul.channel .newregister h3{
+ul.channel .newregister h3 {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -59,12 +59,12 @@ ul.channel .newregister h3{
   font-weight: 600;
   margin-bottom: 16px;
 }
-ul.channel .newregister > div:first-child h3::after{
+ul.channel .newregister > div:first-child h3::after {
   content: "연결안됨";
   font-size: 1.2rem;
   color: #999;
 }
-ul.channel .newregister > div:not(:first-child) h3::after{
+ul.channel .newregister > div:not(:first-child) h3::after {
   content: "";
   display: block;
   width: 6px;
@@ -76,7 +76,7 @@ ul.channel .newregister > div:not(:first-child) h3::after{
   transform: rotate(-135deg);
 }
 
-ul.channel .newregister .addlist > li a{
+ul.channel .newregister .addlist > li a {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -86,21 +86,21 @@ ul.channel .newregister .addlist > li a{
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
   margin-bottom: 8px;
 }
-ul.channel .newregister > div:nth-child(1) .addlist > li a{
+ul.channel .newregister > div:nth-child(1) .addlist > li a {
   padding: 18px 12px;
 }
-ul.channel .newregister .addlist > li a > div{
+ul.channel .newregister .addlist > li a > div {
   display: flex;
   align-items: center;
   gap: 12px;
 }
-ul.channel .newregister .addlist > li a > div img{
+ul.channel .newregister .addlist > li a > div img {
   width: 25px;
   height: 25px;
   object-fit: contain;
 }
-ul.channel .newregister .addlist > li a > p{
-  color: #5E90F1;
+ul.channel .newregister .addlist > li a > p {
+  color: #5e90f1;
   font-size: 1.2rem;
   font-weight: 700;
 }
@@ -111,19 +111,18 @@ ul.channel .newregister .addlist > li a div div p:nth-child(2) {
   font-size: 1.2rem;
 }
 
-
 /* install */
-div.hubimg{
+div.hubimg {
   margin-top: 144px;
   display: flex;
   justify-content: center;
   margin-bottom: 40px;
 }
-div.hubimg img{
+div.hubimg img {
   width: 120px;
 }
 
-ul.hublist li{
+ul.hublist li {
   width: 100%;
   padding: 12px 16px;
   background-color: #fff;
@@ -136,7 +135,7 @@ ul.hublist li{
   margin-bottom: 20px;
 }
 
-ul.hublist li:before{
+ul.hublist li:before {
   content: "1";
   display: flex;
   align-items: center;
@@ -144,33 +143,33 @@ ul.hublist li:before{
   height: 22px;
   width: 20px;
   font-size: 1.4rem;
-  color: #5E90F1;
+  color: #5e90f1;
   font-weight: 500;
 }
-ul.hublist li:nth-child(1):before{
+ul.hublist li:nth-child(1):before {
   content: "1";
 }
-ul.hublist li:nth-child(2):before{
+ul.hublist li:nth-child(2):before {
   content: "2";
 }
-ul.hublist li:nth-child(3):before{
+ul.hublist li:nth-child(3):before {
   content: "3";
 }
-ul.hublist li:nth-child(4):before{
+ul.hublist li:nth-child(4):before {
   content: "4";
 }
-ul.hublist li p{
+ul.hublist li p {
   font-size: 1.4rem;
   font-weight: 500;
 }
-ul.hublist li p span{
+ul.hublist li p span {
   font-weight: 700;
 }
 
-.button{
+.button {
   width: 100%;
   height: 52px;
-  background-color: #5E90F1;
+  background-color: #5e90f1;
   color: #fff;
   display: flex;
   justify-content: center;
@@ -181,8 +180,8 @@ ul.hublist li p span{
   cursor: pointer;
 }
 
-.modal{
-  background-color: rgba(29,29,29,0.5);
+.modal {
+  background-color: rgba(29, 29, 29, 0.5);
   position: fixed;
   width: 100%;
   height: 100%;
@@ -191,7 +190,7 @@ ul.hublist li p span{
   z-index: 999;
 }
 
-.modal .wifiselect{
+.modal .wifiselect {
   background-color: #fff;
   position: fixed;
   top: 50%;
@@ -201,23 +200,23 @@ ul.hublist li p span{
   padding: 20px;
   border-radius: 18px;
 }
-.modal .wifiselect h3{
+.modal .wifiselect h3 {
   font-size: 2rem;
   font-weight: 700;
   text-align: center;
   margin-bottom: 12px;
 }
-.modal .wifiselect > p{
+.modal .wifiselect > p {
   text-align: center;
   color: #999;
   font-size: 1.4rem;
   font-weight: 400;
   margin-bottom: 18px;
 }
-.modal .wifiselect ul.wifilist{
+.modal .wifiselect ul.wifilist {
   margin-bottom: 24px;
 }
-.modal .wifiselect ul.wifilist li{
+.modal .wifiselect ul.wifilist li {
   border-bottom: 1px solid #ddd;
   padding: 8px 0;
   height: 40px;
@@ -226,7 +225,7 @@ ul.hublist li p span{
   align-items: center;
   cursor: pointer;
 }
-.modal .wifiselect ul.wifilist li:after{
+.modal .wifiselect ul.wifilist li:after {
   content: "";
   display: block;
   width: 12px;
@@ -234,12 +233,12 @@ ul.hublist li p span{
   background: url(../../img/main_img/lock.png) no-repeat center center / contain;
   opacity: 50%;
 }
-.modal .wifiselect ul.wifilist li p{
+.modal .wifiselect ul.wifilist li p {
   display: flex;
   align-items: center;
   gap: 12px;
 }
-.modal .wifiselect ul.wifilist li p:before{
+.modal .wifiselect ul.wifilist li p:before {
   content: "";
   display: block;
   width: 22.5px;
@@ -247,7 +246,7 @@ ul.hublist li p span{
   background: url(../../img/main_img/wifi.png) no-repeat center center / contain;
 }
 
-.modal .complete{
+.modal .complete {
   background-color: #fff;
   position: fixed;
   top: 50%;
@@ -257,19 +256,19 @@ ul.hublist li p span{
   padding: 30px 20px 24px;
   border-radius: 18px;
 }
-.modal .complete .compimg{
+.modal .complete .compimg {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
 }
-.modal .complete .compmsg{
+.modal .complete .compmsg {
   text-align: center;
   margin-bottom: 8px;
   font-size: 2rem;
   font-weight: 700;
 }
-.modal .complete .comptxt{
+.modal .complete .comptxt {
   text-align: center;
   font-size: 1.2rem;
   font-weight: 400;
@@ -278,14 +277,14 @@ ul.hublist li p span{
 
 /* adddevice */
 
-h2.place{
+h2.place {
   margin-top: 146px;
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 56px;
 }
 
-.addbtn{
+.addbtn {
   position: fixed;
   bottom: 50px;
   max-width: 688px;
@@ -294,41 +293,113 @@ h2.place{
   transform: translateX(-50%);
 }
 
-#location{
+.custom-select {
+  position: relative;
+  width: 100%;
+  margin-top: 12px;
+}
+
+.select-display {
   border-radius: 8px;
   border: 1px solid #ddd;
   height: 52px;
-  color: #333;
+  color: #333333;
   width: 100%;
   padding: 0 16px;
-  margin-top: 12px;
-  color: #333333;
   font-size: 1.6rem;
   font-weight: 500;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  background: url(../../img/main_img/arrow.png) no-repeat center right 16px /
-    contain;
+  background: url(../../img/main_img/arrow.png) no-repeat center right 16px;
   background-size: 10px;
+  background-color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  user-select: none;
+  transition: border-color 0.2s ease;
+}
+
+.select-display:hover {
+  border-color: #bbb;
+}
+
+.select-display.active {
+  border-color: #5e90f1;
+}
+
+.select-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  display: none;
+  margin-top: 2px;
+}
+
+.select-dropdown ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.select-dropdown li {
+  padding: 12px 16px;
+  cursor: pointer;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #333;
+  transition: background-color 0.2s ease;
+}
+
+.select-dropdown li:first-child {
+  border-radius: 8px 8px 0 0;
+}
+
+.select-dropdown li:last-child {
+  border-radius: 0 0 8px 8px;
+}
+
+.select-dropdown li:hover {
+  background-color: #f8f9fa;
+}
+
+.select-dropdown li.selected {
+  background-color: #5e90f1;
+  color: white;
+}
+
+.select-dropdown li.selected:hover {
+  background-color: #5e90f1;
 }
 
 /* adddevice2 */
 @keyframes changeColor {
-  0% { background-color: #ddd; }
-  33.33% { background-color: #999; }
-  66.66% { background-color: #5E90F1; }
-  100% { background-color: #ddd; }
+  0% {
+    background-color: #ddd;
+  }
+  33.33% {
+    background-color: #999;
+  }
+  66.66% {
+    background-color: #5e90f1;
+  }
+  100% {
+    background-color: #ddd;
+  }
 }
 
-div.addeviceimg{
+div.addeviceimg {
   margin-top: 144px;
   display: flex;
   justify-content: center;
   margin-bottom: 40px;
 }
-.modal2{
-  background-color: rgba(29,29,29,0.5);
+.modal2 {
+  background-color: rgba(29, 29, 29, 0.5);
   position: fixed;
   width: 100%;
   height: 100%;
@@ -336,7 +407,7 @@ div.addeviceimg{
   left: 0;
   z-index: 999;
 }
-.modal2 .search-loading{
+.modal2 .search-loading {
   position: fixed;
   top: 50%;
   left: 50%;
@@ -347,34 +418,34 @@ div.addeviceimg{
   text-align: center;
   border-radius: 18px;
 }
-.modal2 .search-loading h3{
+.modal2 .search-loading h3 {
   font-size: 2rem;
   font-weight: 700;
 }
-.modal2 .search-loading ul{
+.modal2 .search-loading ul {
   display: flex;
   gap: 12px;
   justify-content: center;
   margin: 48px 0 20px;
 }
-.modal2 .search-loading ul li{
+.modal2 .search-loading ul li {
   width: 8px;
   height: 8px;
   background-color: #999;
   border-radius: 4px;
   animation: changeColor 3s infinite;
 }
-.modal2 .search-loading ul li:nth-child(1){
+.modal2 .search-loading ul li:nth-child(1) {
   animation-delay: 0s;
 }
-.modal2 .search-loading ul li:nth-child(2){
+.modal2 .search-loading ul li:nth-child(2) {
   animation-delay: 1s;
 }
-.modal2 .search-loading ul li:nth-child(3){
+.modal2 .search-loading ul li:nth-child(3) {
   animation-delay: 2s;
 }
 
-.modal2 .complete2{
+.modal2 .complete2 {
   background-color: #fff;
   position: fixed;
   top: 50%;
@@ -384,19 +455,19 @@ div.addeviceimg{
   padding: 30px 20px 24px;
   border-radius: 18px;
 }
-.modal2 .complete2 .compimg{
+.modal2 .complete2 .compimg {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
 }
-.modal2 .complete2 .compmsg{
+.modal2 .complete2 .compmsg {
   text-align: center;
   margin-bottom: 8px;
   font-size: 2rem;
   font-weight: 700;
 }
-.modal2 .complete2 .comptxt{
+.modal2 .complete2 .comptxt {
   text-align: center;
   font-size: 1.2rem;
   font-weight: 400;
