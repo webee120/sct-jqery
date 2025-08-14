@@ -239,13 +239,27 @@ header h1 {
     transform: translate(-50%, -50%);
   }
  .mid dt {
-    font-weight: 700;
+    font-weight: 800;
+    font-size: 1.4rem;
     margin-bottom: 10px;
  }
-  .mid span {
-    font-size: 1.8rem;
-    font-weight: 700;
+ .mid dd{
+  font-weight: 500;
+  font-size: 1.4rem;
+  color: #999;
  }
+
+  .mid span {
+    color: #333;
+    font-size: 1.8rem;
+    font-weight: 800;
+ }
+  .extra{
+    color: #333;
+    font-size: 1.2rem;
+    font-weight: 600;
+  } 
+
  .calendar {
   top: 0;
  }
@@ -260,7 +274,7 @@ header h1 {
  }
  .report .title h2{
   font-size: 1.8rem;
-  font-weight: 700;
+  font-weight: 800;
  }
   .report .title img{
     width: 19px;
@@ -275,6 +289,7 @@ header h1 {
     margin: 24px 0;
  }
 .bar1 p{
+  font-weight: 600;
   font-size: 0.8rem;
   text-align: right;
   padding: 0 10px;;
@@ -285,15 +300,16 @@ header h1 {
   height: 24px;
   margin: 6px 8px;
 }
-.bar1 ul li>div{
+.bar1 ul li > div{
   width: calc(100% / 3);
 }
 .gage1{
   font-size: 1.2rem;
+  font-weight: 500;
   background-color: rgba(153, 153, 153, 0.15);
   border-radius: 20px;
 }
-.gage1>div:nth-child(2) {
+.gage1 > div:nth-child(2) {
   background-color: #306CE2;
   border-radius: 20px;
   color: #fff;
@@ -301,14 +317,14 @@ header h1 {
   height: 100%;
   line-height: 24px;
 }
-#heartrate .report .bar1 .gage1>div:nth-child(2){
+#heartrate .report .bar1 .gage1 > div:nth-child(2){
   background-color: #68A0E2;
   color: #fff;
   font-weight: 700;
   height: 100%;
   line-height: 24px;
 }
-#sleep .report .bar1 .gage1>div:nth-child(2){
+#sleep .report .bar1 .gage1 > div:nth-child(2){
   background-color: #96D0D2;
   color: #fff;
   font-weight: 700;
@@ -322,6 +338,7 @@ header h1 {
   color: #333;
 }
 .gage2{
+  font-weight: 500;
   background-color: rgba(153,153,153,0.15);
   border-radius: 18px;
   position: relative;
@@ -336,6 +353,17 @@ header h1 {
   height: 24px;
   display: flex;
   align-items: center;
+}
+.gray00{
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #999;
+}
+
+.gray01{
+  font-weight: 600;
+  font-size: 1.4rem;
+  color: #999;
 }
 .bar1 .gage2 > div:nth-child(1){
   width: 100%;
@@ -435,29 +463,6 @@ header h1 {
   height: auto;
   margin: 20px auto;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /*  nav -------------------------------*/
@@ -590,7 +595,7 @@ header h1 {
       width: 100%;
     }
     .calendar-tit ul li{
-      width: calc((100% - 10px) / 7);
+      width: calc(100% / 7);
       font-size: 1.2rem;
     }
     .open-btn{margin-top: 100px;}
