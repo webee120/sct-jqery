@@ -115,6 +115,9 @@
   border-radius: 50%;
   color: #3D5FA3;
 }
+#calendar .bottom ul.day li a {
+  color: #3D5FA3;
+}
 #calendar .bottom ul.day li.active{
   color: #fff;
   background-color: #3F7AEE;
@@ -261,7 +264,7 @@
   content: "";
   width: 23px;
   height: 23px;
-  background: url(../img/alert_img/alert_02.png)no-repeat center center / contain;
+  background: url(../img/alert_img/alert_03.png)no-repeat center center / contain;
 }
 #alert .tab-cont .bell:nth-last-of-type(3)::before{
   display: block;
@@ -276,7 +279,7 @@
   content: "";
   width: 23px;
   height: 23px;
-  background: url(../img/alert_img/alert_04.png)no-repeat center center / contain;
+  background: url(../img/alert_img/alert_02.png)no-repeat center center / contain;
 }
 
 
