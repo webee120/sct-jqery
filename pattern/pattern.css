@@ -1,5 +1,7 @@
 @charset "utf-8";
 
+
+/* #calendar */
 #calendar{
   padding: 20px 0;
   margin-top: 52px;
@@ -59,8 +61,9 @@
 
 
 
+/* #graph */
 #graph{
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 #graph h2{
@@ -153,6 +156,28 @@
   left: 73%;
 }
 
+#graph .line4 .item1{
+  position: absolute;
+  padding: 3px 8px;
+  background: linear-gradient(90deg,rgba(243, 151, 130, 1) 0%, rgba(232, 92, 59, 1) 100%);
+  color: white;
+  font-size: 1.3rem;
+  border-radius: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 38%;
+}
+#graph .line4 .item2{
+  position: absolute;
+  padding: 3px 8px;
+  background: linear-gradient(90deg,rgba(240, 131, 238, 1) 0%, rgba(211, 31, 207, 1) 100%);
+  color: white;
+  border-radius: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 67%;
+}
+
 
 #graph .line1::before{
   width: 30px;
@@ -192,6 +217,7 @@
 }
 
 
+/* #schedule */
 
 #schedule{
   margin-bottom: 25px;
@@ -249,7 +275,7 @@
 }
 #schedule .content .line li{
   width: calc((100% - 21px) / 7);
-  height: calc(250px / 4);
+  height: calc(230px / 4);
   font-size: 1.3rem;
   font-weight: 500;
   border-right: 1px solid #ddd;
@@ -310,7 +336,7 @@
   margin-right: 4px;
 }
 #schedule .content li p.item1::before{
-  height: 95px;
+  height: 90px;
   background: linear-gradient(0deg,rgba(232, 92, 59, 0.3) 0%, rgba(232, 92, 59, 0.8) 100%);
 }
 #schedule .content li p.item2::before{
@@ -326,7 +352,7 @@
   background: linear-gradient(0deg,rgba(211, 31, 207, 0.5) 0%, rgba(211, 31, 207, 1) 100%);
 }
 #schedule .content li p.item5::before{
-  height: 90px;
+  height: 83px;
   background: linear-gradient(0deg,rgba(174, 233, 189, 0.5) 0%, rgba(174, 233, 189, 1) 100%);
 }
 #schedule .content li p.item6::before{
@@ -334,6 +360,9 @@
   background: linear-gradient(0deg,rgba(174, 233, 189, 0.5) 0%, rgba(174, 233, 189, 1) 100%);
 }
 
+
+
+/* navi */
 .maintab{
   position: fixed;
   bottom: 30px;
@@ -387,4 +416,223 @@
 }
 .maintab li.active a{
   color: #fff;
+}
+
+
+
+/* 일정 추가 */
+/* header */
+header {
+  max-width: 720px;
+  width: 100%;
+  height: 58px;
+  position: fixed;
+  top: 52px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  line-height: 52px;
+  z-index: 9;
+  background-color: #fff;
+  }
+  
+  header .prev-btn a {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url(../img/main_img/arrow.png) no-repeat center / contain;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(90deg);
+    left: 16px;
+  }
+  
+  
+  header h1 {
+    font-size: 2rem;
+    font-weight: 800;
+  }
+
+
+/* #tit */
+#tit{
+  margin-top: 120px;
+}
+#tit form{
+  position: relative;
+}
+#tit form input{
+  padding: 15px 5px;
+  background-color: transparent;
+  font-size: 1.6rem;
+  border-bottom: 1px solid #ddd;
+  width: 100%;
+}
+#tit form input::placeholder{
+  color: #999;
+  font-size: 1.6rem;
+}
+
+#tit form .tit-icon{
+  display: flex;
+  gap: 15px;
+  position: absolute;
+  right: 5px;
+  bottom: 50%;
+  transform: translateY(30%);
+}
+#tit form .tit-icon .icon{
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+#tit form .tit-icon .icon img{
+  width: 100%;
+}
+#tit form .tit-icon .color{
+  width: 20px;
+  height: 20px;
+  background-color: #AEE9BD;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.icon-box{
+  width: 308px;
+  height: 155px;
+  background: url(../img/pattern/pattern_04.png) no-repeat center / cover;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px -5px rgba(0,0,0,0.15);
+  border-radius: 10px;
+  position: absolute;
+  right: 16px;
+  margin-top: 5px;
+  z-index: 99;
+}
+
+.color-box{
+  width: 260px;
+  height: 85px;
+  background: url(../img/pattern/pattern_05.png);
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px -5px rgba(0,0,0,0.15);
+  border-radius: 10px;
+  position: absolute;
+  right: 16px;
+  margin-top: 5px;
+  z-index: 99;
+}
+
+
+/* #time */
+#time{
+  padding: 25px 5px;
+  border-bottom: 1px solid #ddd;
+}
+#time .time-tit{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+#time .time-tit li:first-child{
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+#time .time-tit .toggle{
+  margin-top: 2px;
+}
+
+#time .time-tit .toggle span{
+  font-size: 1.2rem;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+[type="checkbox"] {
+  appearance: none;
+  position: relative;
+  border-radius: 20px;
+  width: 40px;
+  height: 20px;
+  background-color: #E9E9EA;
+}
+
+[type="checkbox"]::before {
+  content: "";
+  position: absolute;
+  left: 2px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: white;
+  transition: left 250ms linear;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.3);
+}
+
+[type="checkbox"]:checked {
+  background-color: #5E90F1;
+}
+
+[type="checkbox"]:checked::before {
+  background-color: white;
+  left: 22px;
+}
+
+[type="checkbox"]:focus-visible {
+  outline-offset: max(2px, 0.1em);
+  outline: max(2px, 0.1em) solid tomato;
+}
+
+[type="checkbox"]:enabled:hover {
+  box-shadow: 0 0 0 max(4px, 0.2em) lightgray;
+}
+
+
+#time .setting{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 25px;
+  text-align: center;
+  ㅠㅐㄱ
+}
+#time .setting li:first-child, #time .setting li:last-child{
+  width: calc((100% - 30px) / 2);
+}
+#time .setting li p{
+  font-size: 1.8rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+#time .setting .arrow{
+  width: 30px;
+  height: 5px;
+  background: url(../img/pattern/arrow.png) no-repeat center / cover;
+  margin-top: 24px;
+}
+
+
+/* #timeset */
+#timeset{
+  padding: 25px 60px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  height: 147px;
+}
+#timeset ul{
+  display: flex;
+  justify-content: space-between;
+}
+#timeset ul li{
+  width: calc(100% / 3);
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #999;
 }
