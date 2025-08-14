@@ -59,5 +59,27 @@
         },
       });
 
+
+
+        // 프로필 클릭
+      $(".warningModal").on("click", function (e) {
+        $(".warning").show();
+      });
+
+      // warning 팝업 - 확인 버튼
+      $(".warning .ok").on("click", function () {
+        $(".warning").hide();
+      });
+
+
+      // 팝업 바깥 클릭 시 팝업 닫기
+      $(".warning").on("click", function (e) {
+        if (e.target === this) {
+          $(this).hide();
+        }
+      });
+
+
+
       
     });          

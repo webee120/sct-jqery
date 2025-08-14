@@ -31,14 +31,18 @@
     </header>
 
     <h2 class="place">설치 장소</h2>
-    <select id="location">
-      <option value="bedroom" selected>선택</option>
-      <option value="bedroom">침실</option>
-      <option value="entrance">현관</option>
-      <option value="fridge">냉장고</option>
-      <option value="bathroom">화장실</option>
-      <option value="emergency-bell">비상벨</option>
-    </select>
+    <div class="custom-select" id="location">
+        <div class="select-display" data-value="">선택</div>
+        <div class="select-dropdown">
+            <ul>
+                <li data-value="bedroom">침실</li>
+                <li data-value="entrance">현관</li>
+                <li data-value="fridge">냉장고</li>
+                <li data-value="bathroom">화장실</li>
+                <li data-value="emergency-bell">비상벨</li>
+            </ul>
+        </div>
+    </div>
     <a class="button addbtn" href="addevice2.html">확인</a>
 
   </div><!-- #wrap -->
