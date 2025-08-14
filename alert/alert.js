@@ -1,9 +1,4 @@
 $(document).ready(function(){
-  // calendar functionality
-	$("#calendar .bottom ul.day li").click(function(){
-    $(this).addClass("active").siblings().removeClass("active");
-  });
-
   // Alert functionality
   $(".tab-cont .cont2").hide();
 
