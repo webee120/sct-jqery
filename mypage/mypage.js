@@ -39,6 +39,8 @@ $(document).ready(function () {
   // 확인 모달의 prev 버튼 클릭 - 모달 닫기
   $(".confirm .prev").on("click", function () {
     $(".confirm").hide();
+    $(".owning.after").show();
+    $(".owning.before").hide();
   });
 
   // 모달 바깥 영역 클릭하면 닫기
