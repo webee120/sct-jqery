@@ -99,4 +99,23 @@ $(document).ready(function () {
 	$("#calendar .bottom ul.day li").click(function(){
     $(this).addClass("active").siblings().removeClass("active");
   });
-});
+
+
+
+//calendar-modal//
+  $('#calendar .top .icon').click(function(){
+      $("#dayModal").addClass('modal-open');
+  });
+
+  $('#dayModal .modal-close').click(function(){
+      $("#dayModal").removeClass('modal-open');
+  });
+
+  $('#calendar .top .icon').click(function(){
+    $("#dayModal .calendar-modal-body").scrollTop(350);
+  });
+
+
+
+}); // 끝
+
