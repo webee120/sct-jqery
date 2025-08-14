@@ -17,7 +17,7 @@ $("document").ready(function(){
   });
 
   $(".day .calendar").click(function(){
-    $("#dayModal .calendar-modal-body").scrollTop(320);
+    $("#dayModal .calendar-modal-body").scrollTop(350);
   });
 
    //달력
@@ -30,7 +30,7 @@ $("document").ready(function(){
   });
 
   $(".week .calendar").click(function(){
-    $(".calendar-modal-body").scrollTop(320);
+    $(".calendar-modal-body").scrollTop(350);
   });
 
    //달력
