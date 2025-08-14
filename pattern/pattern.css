@@ -159,7 +159,7 @@
   padding: 2px 0;
 }
 
-#graph div{
+#graph > div{
   background: #EFF4FE;
   width: 100%;
   height: 45px;
@@ -176,6 +176,7 @@
   top: 50%;
   transform: translateY(-50%);
   width: 15px;
+  z-index: 9990;
 }
 
 #graph .line1 img:nth-child(1){
@@ -240,6 +241,7 @@
   top: 50%;
   transform: translateY(-50%);
   left: 36%;
+  z-index: 9999;
 }
 #graph .line4 .item2{
   position: absolute;
@@ -250,6 +252,7 @@
   top: 50%;
   transform: translateY(-50%);
   left: 67%;
+  z-index: 9999;
 }
 
 
@@ -288,6 +291,133 @@
   left: 4%;
   top: 50%;
   transform: translateY(-50%);
+}
+
+#graph #bar-box{
+  position: absolute;
+  z-index: 999;
+  width: 100%;
+  height: 186px;
+}
+#graph #bar-box .bar1{
+  width: 18%;
+  height: 2%;
+  background-color: #C4D6FA;
+  position: absolute;
+  left: 10%;
+  top: 10%;
+}
+#graph #bar-box .bar2{
+  width: 4px;
+  height: 25%;
+  background-color: #C4D6FA;
+  position: absolute;
+  left: 29%;
+  top: 10%;
+}
+#graph #bar-box .bar3{
+  width: 3%;
+  height: 2%;
+  background-color: #C4D6FA;
+  position: absolute;
+  left: 29%;
+  top: 34%;
+}
+#graph #bar-box .bar4{
+  width: 4px;
+  height: 25%;
+  background-color: #C4D6FA;
+  position: absolute;
+  left: 30.7%;
+  top: 34%;
+}
+#graph #bar-box .bar5{
+  width: 4%;
+  height: 2%;
+  background-color: #C4D6FA;
+  position: absolute;
+  left: 31%;
+  top: 59%;
+}
+#graph #bar-box .bar6{
+  width: 4px;
+  height: 25%;
+  background-color: #C4D6FA;
+  position: absolute;
+  left: 33.5%;
+  top: 59%;
+}
+#graph #bar-box .bar7{
+  width: 18%;
+  height: 2%;
+  background-color: #C4D6FA;
+  position: absolute;
+  left: 33.5%;
+  top: 83%;
+}
+#graph #bar-box .bar8{
+  width: 4px;
+  height: 25%;
+  background-color: #C4D6FA;
+  position: absolute;
+  left: 51.5%;
+  top: 59%;
+}
+#graph #bar-box .bar9{
+  width: 4%;
+  height: 2%;
+  background-color: #C4D6FA;
+  position: absolute;
+  left: 52%;
+  top: 59%;
+}
+#graph #bar-box .bar10{
+  width: 4px;
+  height: 25%;
+  background-color: #C4D6FA;
+  position: absolute;
+  left: 56%;
+  top: 35%;
+}
+#graph #bar-box .bar11{
+  width: 8%;
+  height: 2%;
+  background-color: #C4D6FA;
+  position: absolute;
+  left: 56%;
+  top: 34.5%;
+}
+#graph #bar-box .bar12{
+  width: 4px;
+  height: 50%;
+  background-color: #C4D6FA;
+  position: absolute;
+  left: 62.5%;
+  top: 35%;
+}
+#graph #bar-box .bar13{
+  width: 6%;
+  height: 2%;
+  background-color: #C4D6FA;
+  position: absolute;
+  left: 63%;
+  top: 83%;
+}
+#graph #bar-box .bar14{
+  width: 4px;
+  height: 75%;
+  background-color: #C4D6FA;
+  position: absolute;
+  left: 68%;
+  top: 10%;
+}
+#graph #bar-box .bar15{
+  width: 14%;
+  height: 2%;
+  background-color: #C4D6FA;
+  position: absolute;
+  left: 68%;
+  top: 10%;
 }
 
 
