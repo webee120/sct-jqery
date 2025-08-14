@@ -592,7 +592,7 @@ header h1 {
       background-color: #5E90F1;
       padding: 10px;
       position: fixed;
-      width: 100%;
+      width: 360px;
     }
     .calendar-tit ul li{
       width: calc(100% / 7);
