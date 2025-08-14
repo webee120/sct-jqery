@@ -588,14 +588,15 @@ header h1 {
 
     .calendar-tit ul{
       display: flex;
+      justify-content: center;
       color: #fff;
       background-color: #5E90F1;
       padding: 10px;
       position: fixed;
-      width: 360px;
+      width: 100%;
     }
     .calendar-tit ul li{
-      width: calc(100% / 7);
+      width: calc(360px / 7);
       font-size: 1.2rem;
     }
     .open-btn{margin-top: 100px;}
