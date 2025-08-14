@@ -11,7 +11,7 @@ $(document).ready(function () {
   });
 
   // 확인 버튼 클릭
-  $(".bottom-btn").on("click", function (e) {
+  $(".bottom-btn.sub-confirm").on("click", function (e) {
     e.preventDefault();
 
     var inputValue = $('#subscription input[type="text"]').val();
