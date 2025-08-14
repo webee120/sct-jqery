@@ -71,10 +71,6 @@
         $(".warning").hide();
       });
 
-      // leave 팝업 - 확인 버튼 (가상 페이지로 이동)
-      $(".unsubscribe.leave .ok").on("click", function () {
-        window.location.href = "#";
-      });
 
       // 팝업 바깥 클릭 시 팝업 닫기
       $(".warning").on("click", function (e) {
