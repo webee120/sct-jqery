@@ -164,21 +164,24 @@ header h1 {
     gap: 20px;
   }
 
-  .left span{
+  .left .bold{
     font-weight: 700;
     color: #333;
     font-size: 2rem;
+    padding-right: 2px;
   }
-  .left dt{
+  .left .gray{
     font-weight: 400;
     color: #999;
     font-size: 1.4rem;
+    margin-left: 2px;
   }
 
-  .left dd{
+  .left .thin{
     font-weight: 600;
     color: #333;
     font-size: 1.4rem;
+    padding-left: 8px;
   }
 
   .day ul li:nth-child(2){
@@ -217,7 +220,7 @@ header h1 {
   .sleep_top3{
     background: url(../img/report_img/sleep96.png)no-repeat center center / cover;
   }
-  .top >dl{
+  .top > dl{
     font-size: 1.4rem;
     position: absolute;
     top: 50%;
@@ -254,11 +257,11 @@ header h1 {
   }
 
  .bar1 {
-  width: 100%;
-  height: 61px;
-  border-radius: 10px;
-  text-align: center;
-  margin: 24px 0;
+    width: 100%;
+    height: 61px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 24px 0;
  }
 .bar1 p{
   font-size: 0.8rem;
