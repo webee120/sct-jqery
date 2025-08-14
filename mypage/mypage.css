@@ -568,3 +568,56 @@ input[type="radio"] + label h6 {
   line-height: 52px;
   border-radius: 8px;
 }
+
+/* guide-list */
+.guide-list {
+  margin-top: 130px;
+  height: 75vh;
+}
+
+.guide-list ul li {
+  text-align: center;
+}
+
+.guide-list ul li h5 {
+  display: inline-block;
+  margin: 0 auto;
+  padding: 8px 10px;
+  font-weight: 700;
+  font-size: 1.6rem;
+  background-color: var(--bg-color);
+  color: var(--main-color);
+  border-radius: 40px;
+}
+
+.guide-list ul li .sub-title {
+  font-weight: 600;
+  font-size: 1.6rem;
+  margin: 16px 0 10px;
+}
+
+.guide-list ul li .txt {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+}
+
+.guide-list ul li .mobile {
+  width: 50vw;
+  margin: 0 auto;
+}
+.guide-list ul li .mobile img {
+  width: 100%;
+}
+
+.guide-list .swiper-pagination-bullet {
+  background-color: rgba(0,0,0,0.2);
+  opacity: 1;
+  width: 8px;
+  height: 8px;
+}
+.guide-list .swiper-pagination-bullet-active {
+  width: 14px;
+  height: 8px;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
