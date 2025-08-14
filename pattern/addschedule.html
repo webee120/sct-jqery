@@ -3,14 +3,133 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>일정 추가</title>
   <link rel="stylesheet" href="../css/font.css">
   <link rel="stylesheet" href="../css/reset.css">
   <link rel="stylesheet" href="../css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./pattern.css">
   <script src="../js/jquery-3.7.1.min.js"></script>
   <script src="../js/swiper-bundle.min.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="./pattern.js"></script>
 </head>
 <body>
-  
+  <div id="wrap">
+
+    <div class="bezel">
+      <ul class="pushbar">
+        <li>9:30</li>
+        <li></li>
+        <li></li>
+      </ul>
+      <div class="gesturebar"></div>
+    </div><!-- .bezel -->
+
+    <header>
+      <div class="prev-btn">
+        <a href="./main.html"></a>
+      </div>
+      <h1>일정 추가</h1>
+      <div class="setting">
+        <a href="#"></a>
+      </div>
+    </header>
+
+    <section id="content">
+      <div id="tit">
+        <form>
+          <input type="text" placeholder="제목">
+          <ul class="tit-icon">
+            <li class="icon"><img src="../img/pattern/pattern_03.png" alt="아이콘"></li>
+            <li class="color"></li>
+          </ul><!--.tit-icon-->
+        </form>
+      </div><!--#tit-->
+
+      <div class="icon-box"></div><!--.icon-box-->
+      <div class="color-box"></div><!--.color-box-->
+
+      <div id="time">
+        <ul class="time-tit">
+          <li>시간</li>
+          <li class="toggle">
+            <fieldset>
+              <label>
+                <span>하루 종일</span>
+                <input role="switch" type="checkbox" />
+              </label>
+            </fieldset>
+          </li><!--.toggle-->
+        </ul><!--.time-tit-->
+
+        <ul class="setting">
+          <li>
+            <p class="day">7월 2일</p>
+            <p class="time">오전 12:00</p>
+          </li>
+          <li class="arrow"></li>
+          <li>
+            <p class="day">7월 2일</p>
+            <p class="time">오후 12:00</p>
+          </li>
+        </ul><!--.setting-->
+      </div><!--#time-->
+
+      <div id="timeset">
+        <ul>
+          <li class="swiper slide1">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">오전</div>
+              <div class="swiper-slide">오후</div>
+            </div>
+          </li><!--.slide1-->
+          <li class="swiper slide2">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">01시</div>
+              <div class="swiper-slide">02시</div>
+              <div class="swiper-slide">03시</div>
+              <div class="swiper-slide">04시</div>
+              <div class="swiper-slide">05시</div>
+              <div class="swiper-slide">06시</div>
+              <div class="swiper-slide">07시</div>
+              <div class="swiper-slide">08시</div>
+              <div class="swiper-slide">09시</div>
+              <div class="swiper-slide">10시</div>
+              <div class="swiper-slide">11시</div>
+              <div class="swiper-slide">12시</div>
+            </div>
+          </li><!--.slide2-->
+          <li class="swiper slide3">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">00분</div>
+              <div class="swiper-slide">01분</div>
+              <div class="swiper-slide">02분</div>
+              <div class="swiper-slide">03분</div>
+              <div class="swiper-slide">04분</div>
+              <div class="swiper-slide">05분</div>
+              <div class="swiper-slide">06분</div>
+              <div class="swiper-slide">07분</div>
+              <div class="swiper-slide">08분</div>
+              <div class="swiper-slide">09분</div>
+              <div class="swiper-slide">10분</div>
+              <div class="swiper-slide">11분</div>
+              <div class="swiper-slide">12분</div>
+              <div class="swiper-slide">13분</div>
+              <div class="swiper-slide">14분</div>
+              <div class="swiper-slide">15분</div>
+              <div class="swiper-slide">16분</div>
+              <div class="swiper-slide">17분</div>
+              <div class="swiper-slide">18분</div>
+              <div class="swiper-slide">19분</div>
+              <div class="swiper-slide">20분</div>
+            </div>
+          </li><!--.slide3-->
+        </ul>
+      </div><!--#timeset-->
+      
+    </section><!--#content-->
+
+
+  </div><!--#wrap-->
 </body>
 </html>
