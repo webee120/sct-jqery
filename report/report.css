@@ -437,29 +437,6 @@ header h1 {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*  nav -------------------------------*/
 .maintab{
   position: fixed;
@@ -590,7 +567,7 @@ header h1 {
       width: 100%;
     }
     .calendar-tit ul li{
-      width: calc((100% - 10px) / 7);
+      width: calc(100% / 7);
       font-size: 1.2rem;
     }
     .open-btn{margin-top: 100px;}
