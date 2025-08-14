@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>alert main</title>
+  <link rel="stylesheet" href="../css/font.css">
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="alert.css">
+  <script src="../js/jquery-3.7.1.min.js"></script>
+  <script src="../js/swiper-bundle.min.js"></script>
+  <script src="alert.js"></script>
+</head>
+<body>
+  <div id="wrap">
+   <div class="bezel">
+     <ul class="pushbar">
+       <li>9:30</li>
+        <li></li>
+        <li></li>
+      </ul>
+     <div class="gesturebar"></div>
+   </div><!-- .bezel -->
+
+    <section id="calendar">
+      <div class="top">
+        <h1>7월 3일</h1>
+          <div class="icon">
+          <img src="../img/main_img/calendar.png" alt="캘린더 아이콘">
+        </div>
+      </div><!--.top-->
+
+      <div class="bottom">
+        <ul class="week">
+<li>월</li><li>화</li><li>수</li>
+          <li>목</li><li>금</li><li class="blue">토</li><li class="red">일</li>
+        </ul><!--.week-->
+        <ul class="day"><li>31</li><li>1</li><li>2</li>
+          <li  class="active">3</li><li>4</li><li>5</li><li>6</li>
+        </ul><!--.day-->
+      </div><!--.bottom-->
+    </section><!--#calendar-->
+
+    <section id="alert">
+      <ul class="alert-tab">
+        <li class="active"><p href="#">긴급 알림</p></li>
+        <li><p href="#">일정 알림</p></li>
+      </ul><!-- .maintab -->
+
+      <!-- <div class="alert-empty">
+        <a href="#"><img src="../img/alert_img/unionbig.png" alt=""></a>
+        <p>알림이 없습니다.</p>
+      </div> -->
+      
+      <div class="tab-cont">
+        <div class="cont1">
+          <ul>
+            <li class="emergency">
+              <div>
+                <div>
+                  <p class="radius">냉장고</p>
+                  <p class="time">오후 04:15</p>
+                </div>
+                <p class="bold">냉장고 문이 12시간 이상 열리지 않았습니다.</p>
+              </div>
+            </li>  
+            <li class="emergency">
+              <div>
+                <div>
+                  <p class="radius">현관</p>
+                  <p class="time">오전 08:00</p>
+                </div>
+                <p class="bold">현관문이 5분 이상 닫히지 않았습니다.</p>
+              </div>
+            </li>  
+          </ul>
+         <button type="button" class="cell">전화연결</button>
+        </div><!-- cont1 -->
+
+        <div class="cont2">
+          <ul>
+            <li class="bell">
+              <div>
+                <div>
+                  <p class="time">오후 02:00</p>
+                </div>
+                <p class="bold">복지관 노래 교실</p>
+              </div>
+            </li>  
+            <li class="bell">
+              <div>
+                <div>
+                  <p class="time">오전 08:30</p>
+                </div>
+                <p class="bold">천불사 법회 모임</p>
+              </div>
+            </li>  
+          </ul>
+        </div><!-- cont2 -->
+
+      </div><!-- tab-cont -->
+      </div>
+    </section><!--#alert-tab-->
+
+    <ul class="maintab">
+      <li><a href="../index.html">홈</a></li>
+      <li><a href="../pattern/main.html">생활패턴</a></li>
+      <li class="active"><a href="main.html">알림</a></li>
+      <li><a href="../mypage/main.html">마이페이지</a></li>
+    </ul><!-- .maintab -->
+  </div><!-- #wrap -->
+</body>
+</html>
