@@ -8,5 +8,21 @@ $(document).ready(function(){
   });
 
 
+ 
+//calendar-modal//
+ 
+  $('#calendar').click(function(){
+      $("#dayModal").addClass('modal-open');
+  });
+
+  $('#dayModal .modal-close').click(function(){
+      $("#dayModal").removeClass('modal-open');
+  });
+
+  $("#calendar").click(function(){
+    $("#dayModal .calendar-modal-body").scrollTop(350);
+  });
+
+
 })
 
