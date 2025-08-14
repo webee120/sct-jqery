@@ -23,4 +23,8 @@ document.addEventListener("DOMContentLoaded", function() {
     $(this).find("img").toggle();
   });
   
+
+  
 })
+
+
