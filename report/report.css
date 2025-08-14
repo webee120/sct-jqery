@@ -596,7 +596,7 @@ header h1 {
       width: 100%;
     }
     .calendar-tit ul li{
-      width: calc(360px / 7);
+      width: calc(328px / 7);
       font-size: 1.2rem;
     }
     .open-btn{margin-top: 100px;}
