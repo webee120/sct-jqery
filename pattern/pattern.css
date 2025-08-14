@@ -62,7 +62,7 @@
 
 /* .캘린더 모달창 */
 .calendar-modal{
-  z-index: 999;
+  z-index: 99999;
   position: fixed;
   top: 100%;
   left: 50%;
@@ -94,7 +94,7 @@
 .calendar-modal-header h1{
   display: inline-block;
   font-size: 1.6rem;
-  background: url(img/arr_w.png) no-repeat right center / 10px auto;
+  background: url(../img/arr_w.png) no-repeat right center / 10px auto;
   padding-right: 20px;
 }
 
@@ -1250,7 +1250,7 @@ label {
   display: none;
 }
 
-#re-month #schedule .txt-box .txt{
+#re-month .day12 #schedule .txt-box .txt{
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
