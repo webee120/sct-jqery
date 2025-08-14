@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="mypage.css" />
     <script src="../js/jquery-3.7.1.min.js"></script>
     <script src="../js/swiper-bundle.min.js"></script>
+    <script src="mypage.js"></script>
   </head>
   <body>
     <div id="wrap">
@@ -54,11 +55,11 @@
                 <p>성별</p>
                 <div>
                   <div class="gender-m">
-                    <input type="radio" name="gender" id="male" checked/>
+                    <input type="radio" name="gender" id="male" checked />
                     <label for="male"><h6>남</h6></label>
                   </div>
                   <div class="gender-f">
-                    <input type="radio" name="gender" id="female"/>
+                    <input type="radio" name="gender" id="female" />
                     <label for="female"><h6>여</h6></label>
                   </div>
                 </div>
@@ -69,27 +70,37 @@
               </li>
               <li class="birth">
                 <p>생년</p>
-                <select>
-                  <option value="1939">1939 년생</option>
-                  <option value="1940">1940 년생</option>
-                  <option value="1941">1941 년생</option>
-                  <option value="1942" selected>1942 년생</option>
-                  <option value="1943">1943 년생</option>
-                  <option value="1944">1944 년생</option>
-                  <option value="1945">1945 년생</option>
-                  <option value="1946">1946 년생</option>
-                </select>
+                <div class="custom-select" id="location">
+                  <div class="select-display" data-value="1942">1942 년생</div>
+                  <div class="select-dropdown">
+                    <ul>
+                      <li data-value="1939">1939 년생</li>
+                      <li data-value="1940">1940 년생</li>
+                      <li data-value="1941">1941 년생</li>
+                      <li data-value="1942" selected>1942 년생</li>
+                      <li data-value="1943">1943 년생</li>
+                      <li data-value="1944">1944 년생</li>
+                      <li data-value="1945">1945 년생</li>
+                      <li data-value="1946">1946 년생</li>
+                    </ul>
+                  </div>
+                </div>
               </li>
               <li class="birth">
                 <p>요양 등급 (선택)</p>
-                <select>
-                  <option value="1">1 등급</option>
-                  <option value="2">2 등급</option>
-                  <option value="3">3 등급</option>
-                  <option value="4" selected>4 등급</option>
-                  <option value="5">5 등급</option>
-                  <option value="max">인지 등급</option>
-                </select>
+                <div class="custom-select" id="location">
+                  <div class="select-display" data-value="4">4 등급</div>
+                  <div class="select-dropdown">
+                    <ul>
+                      <li data-value="1">1 등급</li>
+                      <li data-value="2">2 등급</li>
+                      <li data-value="3">3 등급</li>
+                      <li data-value="4" selected>4 등급</li>
+                      <li data-value="5">5 등급</li>
+                      <li data-value="max">인지 등급</li>
+                    </ul>
+                  </div>
+                </div>
               </li>
               <li class="address verify">
                 <p>주소 (선택)</p>
