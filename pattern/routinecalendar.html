@@ -48,7 +48,7 @@
       <div class="item">
         <ul>
           <li id="all">
-            <section id="calendar">
+            <section id="calendar" class="type-all">
               <div class="top">
                 <h1>7월 2일</h1>
                 <div class="icon">
@@ -78,9 +78,34 @@
               </div><!--.bottom-->
             </section><!--#calendar-->
 
+            <div class="calendar-modal" id="dayModal">
+              <div class="calendar-modal-header">
+                <div class="tit">
+                  <h1>2025년</h1>
+                </div>
+                <div class="modal-close">완료</div>
+              </div>
+              <div class="calendar-modal-body">
+                <div class="calendar-tit">
+                  <ul>
+                    <li>일</li>
+                    <li>월</li>
+                    <li>화</li>
+                    <li>수</li>
+                    <li>목</li>
+                    <li>금</li>
+                    <li>토</li>
+                  </ul>
+                </div>
+                <div class="calendar-img">
+                  <img src="../img/calendar.png" alt="달력">
+                </div>
+              </div>
+            </div><!--.calendar-modal #dayModal-->
+
             <section id="schedule">
 
-              <ul class="box1">
+              <ul class="box1" id="box">
                 <li class="txt-box">
                   <span>오전 09:00 ~ 오전 10:00</span>
                   <ul class="txt-flex">
@@ -91,9 +116,9 @@
                 <li class="trash"></li><!--.trash-->
               </ul><!--.box1-->
 
-              <ul class="box2">
+              <ul class="box2" id="box">
                 <li class="txt-box">
-                  <span>dhgn 01:30 ~ dhgn 03:30</span>
+                  <span>오후 01:30 ~ 오후 03:30</span>
                   <ul class="txt-flex">
                     <li class="txt">병원 방문</li>
                     <li class="repeat">목요일</li>
@@ -102,7 +127,7 @@
                 <li class="trash"></li><!--.trash-->
               </ul><!--.box2-->
 
-              <ul class="box3">
+              <ul class="box3" id="box">
                 <li class="txt-box">
                   <span>오후 03:30 ~ 오후 04:30</span>
                   <ul class="txt-flex">
@@ -112,7 +137,7 @@
                 <li class="trash"></li><!--.trash-->
               </ul><!--.box3-->
 
-              <ul class="box4">
+              <ul class="box4" id="box">
                 <li class="txt-box">
                   <span>오후 05:30 ~ 오후 11:59</span>
                   <ul class="txt-flex">
@@ -123,10 +148,169 @@
                 <li class="trash"></li><!--.trash-->
               </ul><!--.box4-->
             </section><!--#schedule-->
+  
           </li><!--#all-->
-          <li></li>
-          <li></li> 
-          <li></li>
+
+          <li id="re-day">
+            <section id="schedule">
+
+              <ul class="box1" id="box">
+                <li class="txt-box">
+                  <span>오전 09:00 ~ 오전 10:00</span>
+                  <ul class="txt-flex">
+                    <li class="txt">동네 산책</li>
+                    <li class="repeat">매일</li>
+                  </ul><!--.txt-flex-->
+                </li>
+                <li class="trash"></li><!--.trash-->
+              </ul><!--.box1-->
+
+              <ul class="box2" id="box">
+                <li class="txt-box">
+                  <span>오전 11:00 ~ 오후 02:00</span>
+                  <ul class="txt-flex">
+                    <li class="txt">노인정 방문</li>
+                    <li class="repeat">매일</li>
+                  </ul><!--.repeat-flex-->
+                </li>
+                <li class="trash"></li><!--.trash-->
+              </ul><!--.box2-->
+
+            </section><!--#schedule-->
+          </li><!--#re-day-->
+
+          <li id="re-week">
+            <ul class="mon">
+              <li>월요일</li>
+              <li class="arrow"></li>
+              <li class="no-repeat">해당 요일에 반복 일정이 없습니다.</li>
+            </ul><!--.mon-->
+            <ul class="tue">
+              <li>화요일</li>
+              <li class="arrow"></li>
+              <section id="schedule">
+                <ul class="box1" id="box">
+                  <li class="txt-box">
+                    <span>오후 05:30 ~ 오후 12:30</span>
+                    <ul class="txt-flex">
+                      <li class="txt">자녀 집 방문</li>
+                      <li class="repeat">화요일 / 목요일</li>
+                    </ul><!--.txt-flex-->
+                  </li>
+                  <li class="trash"></li><!--.trash-->
+                </ul><!--.box1-->
+              </section><!--#schedule-->
+            </ul><!--tue-->
+            <ul class="wed">
+              <li>수요일</li>
+              <li class="arrow"></li>
+              <li class="no-repeat">해당 요일에 반복 일정이 없습니다.</li>
+            </ul><!--.wed-->
+            <ul class="thu">
+              <li>목요일</li>
+              <li class="arrow"></li>
+              <section id="schedule">
+                <ul class="box1" id="box">
+                  <li class="txt-box">
+                    <span>오후 05:30 ~ 오후 12:30</span>
+                    <ul class="txt-flex">
+                      <li class="txt">자녀 집 방문</li>
+                      <li class="repeat">화요일 / 목요일</li>
+                    </ul><!--.txt-flex-->
+                  </li>
+                  <li class="trash"></li><!--.trash-->
+                </ul><!--.box1-->
+                <ul class="box2" id="box">
+                  <li class="txt-box">
+                    <span>오후 01:30 ~ 오후 03:30</span>
+                    <ul class="txt-flex">
+                      <li class="txt">병원 방문</li>
+                      <li class="repeat">목요일</li>
+                    </ul><!--.txt-flex-->
+                  </li>
+                  <li class="trash"></li><!--.trash-->
+                </ul><!--.box2-->
+              </section><!--#schedule-->
+            </ul><!--.thu-->
+            <ul class="fri">
+              <li>금요일</li>
+              <li class="arrow"></li>
+              <li class="no-repeat">해당 요일에 반복 일정이 없습니다.</li>
+            </ul><!--.fri-->
+            <ul class="sat">
+              <li>토요일</li>
+              <li class="arrow"></li>
+              <li class="no-repeat">해당 요일에 반복 일정이 없습니다.</li>
+            </ul><!--.sat-->
+            <ul class="sun">
+              <li>일요일</li>
+              <li class="arrow"></li>
+              <li class="no-repeat">해당 요일에 반복 일정이 없습니다.</li>
+            </ul><!--.sun-->
+          </li><!--#re-week-->
+
+          <li id="re-month">
+            <ul class="day1">
+              <li>01일</li>
+              <li class="arrow"></li>
+              <section id="schedule">
+                <ul class="box1" id="box">
+                  <li class="txt-box">
+                    <span>오전 09:00 ~ 오전 10:00</span>
+                    <ul class="txt-flex">
+                      <li class="txt">주민센터 방문</li>
+                      <li class="repeat">1일</li>
+                    </ul><!--.txt-flex-->
+                  </li>
+                  <li class="trash"></li><!--.trash-->
+                </ul><!--.box1-->
+                <ul class="box2" id="box">
+                  <li class="txt-box">
+                    <span>오후 02:00 ~ 오후 04:00</span>
+                    <ul class="txt-flex">
+                      <li class="txt">요양센터 방문하기</li>
+                      <li class="repeat">1일</li>
+                    </ul><!--.txt-flex-->
+                  </li>
+                  <li class="trash"></li><!--.trash-->
+                </ul><!--.box2-->
+              </section><!--#schedule-->
+            </ul><!--day01-->
+
+            <ul class="day12">
+              <li>12일</li>
+              <li class="arrow"></li>
+              <section id="schedule">
+                <ul class="box3" id="box">
+                  <li class="txt-box">
+                    <span>오전 10:00 ~ 오전 11:00</span>
+                    <ul class="txt-flex">
+                      <li class="txt">병원 방문 (정신건강 의학 의사 면담)</li>
+                      <li class="repeat">12일</li>
+                    </ul><!--.txt-flex-->
+                  </li>
+                  <li class="trash"></li><!--.trash-->
+                </ul><!--.box3-->
+              </section><!--#schedule-->
+            </ul><!--day12-->
+
+            <ul class="last-day">
+              <li>말일</li>
+              <li class="arrow"></li>
+              <section id="schedule">
+                <ul class="box4" id="box">
+                  <li class="txt-box">
+                    <span>오전 09:30 ~ 오전 10:30</span>
+                    <ul class="txt-flex">
+                      <li class="txt">병원 가기 (치과)</li>
+                      <li class="repeat">말일</li>
+                    </ul><!--.txt-flex-->
+                  </li>
+                  <li class="trash"></li><!--.trash-->
+                </ul><!--.box4-->
+              </section><!--#schedule-->
+            </ul><!--last-day-->
+          </li><!--#re-month-->
         </ul>
       </div><!--.item-->
       

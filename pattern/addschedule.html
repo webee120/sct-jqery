@@ -74,17 +74,43 @@
         </ul><!--.setting-->
       </div><!--#time-->
 
+      <div class="calendar-modal" id="dayModal">
+        <div class="calendar-modal-header">
+          <div class="tit">
+            <h1>2025년</h1>
+          </div>
+          <div class="modal-close">완료</div>
+        </div>
+        <div class="calendar-modal-body">
+          <div class="calendar-tit">
+            <ul>
+              <li>일</li>
+              <li>월</li>
+              <li>화</li>
+              <li>수</li>
+              <li>목</li>
+              <li>금</li>
+              <li>토</li>
+            </ul>
+          </div>
+          <div class="calendar-img">
+            <img src="../img/calendar.png" alt="달력">
+          </div>
+        </div>
+      </div>
+
+
       <div id="timeset">
         <ul>
           <li class="swiper slide1">
             <div class="swiper-wrapper">
-              <div class="swiper-slide">오전</div>
+              <div class="swiper-slide active">오전</div>
               <div class="swiper-slide">오후</div>
             </div>
           </li><!--.slide1-->
           <li class="swiper slide2">
             <div class="swiper-wrapper">
-              <div class="swiper-slide">01시</div>
+              <div class="swiper-slide active">01시</div>
               <div class="swiper-slide">02시</div>
               <div class="swiper-slide">03시</div>
               <div class="swiper-slide">04시</div>
@@ -100,7 +126,7 @@
           </li><!--.slide2-->
           <li class="swiper slide3">
             <div class="swiper-wrapper">
-              <div class="swiper-slide">00분</div>
+              <div class="swiper-slide active">00분</div>
               <div class="swiper-slide">01분</div>
               <div class="swiper-slide">02분</div>
               <div class="swiper-slide">03분</div>
@@ -175,7 +201,9 @@
 
           <div class="swiper month-slide">
             <ul class="swiper-wrapper">
-              <li class="swiper-slide active">1일</li>
+              <li class="swiper-slide">30일</li>
+              <li class="swiper-slide">말일</li>
+              <li class="swiper-slide">1일</li>
               <li class="swiper-slide">2일</li>
               <li class="swiper-slide">3일</li>
               <li class="swiper-slide">4일</li>
@@ -204,8 +232,6 @@
               <li class="swiper-slide">27일</li>
               <li class="swiper-slide">28일</li>
               <li class="swiper-slide">29일</li>
-              <li class="swiper-slide">30일</li>
-              <li class="swiper-slide">말일</li>
             </ul>
           </div><!--.month-slide-->
           <p>*전/후일 가장 가까운 날로 적용됩니다</p>
