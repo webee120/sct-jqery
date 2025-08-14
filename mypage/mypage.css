@@ -529,7 +529,9 @@ button {
 
 /* subscription 오류 팝업 */
 .error,
-.confirm {
+.confirm,
+.caution,
+.to-login {
   position: fixed;
   max-width: 720px;
   width: 100%;
@@ -585,6 +587,13 @@ button {
   line-height: 52px;
   border-radius: 8px;
 }
+.caution .pop-up .btns {
+  display: flex;
+  gap: 16px;
+}
+.caution .pop-up .btns .prev {
+  background-color: #ddd;
+}
 
 /* guide-list */
 .guide-list {
@@ -619,7 +628,7 @@ button {
 }
 
 .guide-list ul li .mobile {
-  width: 50vw;
+  width: 40vw;
   margin: 0 auto;
 }
 .guide-list ul li .mobile img {
