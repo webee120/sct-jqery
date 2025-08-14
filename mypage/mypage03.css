@@ -103,11 +103,12 @@ form h3 {
     font-weight: 600;
     margin-bottom: 16px;
   }
-.form input {
+form input[type="password"] {
     width: 100%;
-    padding: 8px 35px 8px 10px; 
+    padding: 10px 40px 10px 10px;
     box-sizing: border-box;
-    border: 1px solid #ccc;
+    border: 1px solid #999;
+    border-radius: px;
   }
 
 input[type="password"] {
@@ -115,17 +116,60 @@ input[type="password"] {
   height: 52px;
   padding: 0 16px;
   border: 1px solid #ddd;
-  border-radius: 8px;
+ 
   font-size: 1.6rem;
 }
-span.toggle_pw {
+.toggle_pw {
   position: absolute;
   right: 16px;
   top: 45%;
   transform: translateY(50%);
   cursor: pointer;
+   z-index: 10;
 }
-span.toggle_pw .on{
-  display: none;
+.on{
+  transform: translate(-10%, 45%) ;
+}
+
+.modal .complete {
+  background-color: #fff;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: calc(100% - 32px);
+  padding: 30px 20px 24px;
+  border-radius: 18px;
+}
+.modal .complete .compimg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.modal .complete .compmsg {
+  text-align: center;
+  margin-bottom: 8px;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.modal .complete .comptxt {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+.button {
+  width: 100%;
+  height: 52px;
+  background-color: #5E90F1;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
 }
 

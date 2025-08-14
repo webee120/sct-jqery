@@ -105,6 +105,12 @@ ul.channel .newregister .addlist > li a > p{
   font-weight: 700;
 }
 
+ul.channel .newregister .addlist > li a div div p:nth-child(2) {
+  color: #999;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
 
 /* install */
 div.hubimg{
@@ -289,11 +295,22 @@ h2.place{
 }
 
 #location{
-  width: 100%;
-  border: 1px solid #999;
-  padding: 16px 12px;
   border-radius: 8px;
+  border: 1px solid #ddd;
+  height: 52px;
+  color: #333;
+  width: 100%;
+  padding: 0 16px;
+  margin-top: 12px;
+  color: #333333;
   font-size: 1.6rem;
+  font-weight: 500;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url(../../img/main_img/arrow.png) no-repeat center right 16px /
+    contain;
+  background-size: 10px;
 }
 
 /* adddevice2 */

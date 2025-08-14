@@ -94,4 +94,9 @@ $(document).ready(function () {
   selectFirst();
   select.addEventListener("click", selects);
   body.addEventListener("click", hideSelect);
+
+  // #calendar
+	$("#calendar .bottom ul.day li").click(function(){
+    $(this).addClass("active").siblings().removeClass("active");
+  });
 });

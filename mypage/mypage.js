@@ -54,6 +54,12 @@ $(document).ready(function () {
     }
   });
 
+  $(".confirm").on("click", function (e) {
+    if (e.target === this) {
+      $(this).hide();
+    }
+  });
+
   const guide_list = new Swiper(".guide-list", {
     pagination: {
     el: '.swiper-pagination',
@@ -61,4 +67,37 @@ $(document).ready(function () {
     clickable: true,
   },
   });
+
+  $(document).ready(function() {
+    // li.logout 클릭 시 첫 번째 모달(caution) 표시
+    $('li.logout').on('click', function() {
+        $('.caution').show();
+    });
+    
+    // caution 모달의 "이전" 버튼 클릭 시 모달 닫기
+    $('.caution .prev').on('click', function() {
+        $('.caution').hide();
+    });
+    
+    // caution 모달의 "확인" 버튼 클릭 시
+    $('.caution .ok').on('click', function() {
+        // 첫 번째 모달 닫기 후 바로 두 번째 모달 표시
+        $('.caution').hide();
+        $('.to-login').show();
+    });
+    
+    // to-login 모달의 "확인" 버튼 클릭 시 모달 닫기 후 로그인 페이지로 이동
+    $('.to-login .prev').on('click', function() {
+        $('.to-login').hide();
+        // 바로 로그인 페이지로 이동
+        window.location.href = '#login';
+    });
+    
+    // 모달 배경 클릭 시 닫기 (선택사항)
+    $('.caution, .to-login').on('click', function(e) {
+        if (e.target === this) {
+            $(this).hide();
+        }
+    });
+});
 });

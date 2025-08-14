@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>unsubscribe</title>
   <link rel="stylesheet" href="../css/font.css">
   <link rel="stylesheet" href="../css/reset.css">
   <link rel="stylesheet" href="../css/swiper-bundle.min.css">
@@ -40,18 +40,41 @@
         <h3>비밀번호 확인</h3>
         <label for="pw"></label>
         <input type="password" id="pw" name="pw">
-        <span class="toggle_pw" onclick="toggle">
+        <span class="toggle_pw">
           <img src="../img/mypage_img/password_off.png" alt="password_off" class="off">
-          <img src="../img/mypage_img/password_on.png" alt="password_on" class="on">
+          <img src="../img/mypage_img/password_on.png" alt="password_on" style="display: none;" class="on">
         </span>
       </form>
 
-        <div class="bottom-btn">
-        <a href="main.html">
+      <div class="bottom-btn">
+        <a href=".unsubscribe" class="unsubscribe-btn">
           <p>회원 탈퇴</p>
         </a>
       </div>
+
+      <div class="modal unsubscribe">
+        <div class="complete">
+        <div class="compimg">
+          <img src="../../img/main_img/modal_03.png" alt="경고">
+        </div>
+        <h4 class="compmsg">정말 탈퇴하시겠습니까?</h4>
+        <p class="comptxt">회원탈퇴를 하면 모든 기록과 정보가 삭제되며,<br>
+                            등록한 구독권도 함께 삭제되어 재사용이 불가능해집니다.</p>
+        <a class="button" href=".quit">확인</a>
+      </div>
+      </div>
+      <div class="modal quit">
+        <div class="complete">
+        <div class="compimg">
+          <img src="../../img/main_img/modal_01.png" alt="등록완료">
+        </div>
+        <h4 class="compmsg">회원 탈퇴 완료</h4>
+        <p class="comptxt">이용해주셔서 감사합니다.</p>
+       <a class="button" href="#">확인</a>
+      </div>
+      </div>
+
+
   </div>
-  
 </body>
 </html>

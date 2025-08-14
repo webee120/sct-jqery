@@ -217,3 +217,58 @@ header h1 {
   margin-right: 20px;
 }
 
+/* tos */
+.server{
+  padding: 134px 0 0 0;
+}
+
+.servicebox a {
+  width: 100%;
+  height: 55px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+.servicetext a {
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+.servicephoto img{
+  height: 522px;
+}
+
+.s-text{
+  padding: 134px 20px 0 20px;
+}
+.s-text h4{
+  font-size: 2.3rem;
+  text-align: center;
+  padding-bottom: 20px;
+}
+.s-text h3{
+  padding-top: 20px;
+}
+
+.s-text p{
+  padding-top: 5px;
+  padding-left: 10px;
+}
+
+span{
+  padding-left: 20px;
+  padding-right: 5px;
+}
+.blank02{
+ margin-left: 40px;
+}
+.blank03{
+ margin-left: 30px;
+}
+.s-text strong{
+  color: blue;
+  font-weight: 400;
+}

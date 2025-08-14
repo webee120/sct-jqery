@@ -1,3 +1,14 @@
+.bezel .pushbar {
+  background-color: #fff;
+}
+
+#wrap.remove-pd {
+  padding: 0;
+}
+#wrap.main-wrap {
+  overflow: hidden;
+}
+
 header {
   max-width: 720px;
   width: 100%;
@@ -50,7 +61,7 @@ header h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 1.6rem;
     margin-right: 29px;
   }
@@ -67,17 +78,21 @@ header h1 {
   .content li a dt {
     white-space: nowrap;
     font-size: 1.4rem;
+    font-weight: 500;
     width: 80px;
   }
   .content li a dd {
     margin: 0;
     font-size: 1.4rem;
-    font-weight: bold;
+    font-weight: 600;
+    color: #333;
   }
   .content li a span {
     font-size: 1.8rem;
-    font-weight: bold;
-    color: #333
+    font-weight: 900;
+    color: #333;
+    padding-left: 2px;
+    padding-right: 2px;
   }
   /* 오른쪽 점수 원형 */
   .content li a> div:last-child {
@@ -159,6 +174,27 @@ header h1 {
     justify-content: space-between;
     gap: 20px;
   }
+
+  .left .bold{
+    font-weight: 700;
+    color: #333;
+    font-size: 2rem;
+    padding-right: 2px;
+  }
+  .left .gray{
+    font-weight: 400;
+    color: #999;
+    font-size: 1.4rem;
+    margin-left: 2px;
+  }
+
+  .left .thin{
+    font-weight: 600;
+    color: #333;
+    font-size: 1.4rem;
+    padding-left: 8px;
+  }
+
   .day ul li:nth-child(2){
     margin: 20px 8px 10px;
     font-size: 1.2rem;
@@ -195,7 +231,7 @@ header h1 {
   .sleep_top3{
     background: url(../img/report_img/sleep96.png)no-repeat center center / cover;
   }
-  .top >dl{
+  .top > dl{
     font-size: 1.4rem;
     position: absolute;
     top: 50%;
@@ -232,11 +268,11 @@ header h1 {
   }
 
  .bar1 {
-  width: 100%;
-  height: 61px;
-  border-radius: 10px;
-  text-align: center;
-  margin: 24px 0;
+    width: 100%;
+    height: 61px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 24px 0;
  }
 .bar1 p{
   font-size: 0.8rem;
@@ -485,3 +521,76 @@ header h1 {
 .maintab li.active a{
   color: #fff;
 }
+
+/* 달력 모달 */
+.calendar-modal{
+        z-index: 999;
+        position: fixed; 
+        top: 100%; 
+        left: 50%; 
+        transform: translateX(-50%);
+        width: 100%; 
+        height: 90%; 
+        background-color:#5E90F1; 
+        border-radius: 20px 20px 0 0;
+        transition: all 0.5s;
+        max-width: 720px;
+
+    }
+    .calendar-modal.modal-open{
+        top: 10%;
+    }
+    .calendar-modal-header{
+        text-align: center;
+        position: relative;
+        padding: 20px 0;
+        border-bottom: 1px solid #000;
+        color: #fff;
+        font-size: 1.6rem;
+    }
+    .calendar-modal-header .tit{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+    }
+    .calendar-modal-header h1{
+      display: inline-block;
+      font-size: 1.6rem;
+      background: url(img/arr_w.png) no-repeat right center / 10px auto;
+      padding-right: 20px;
+    }
+    
+    .calendar-modal-body{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        margin-top: 60px;
+        overflow: scroll;
+        text-align: center;
+    }
+    .modal-close{
+        position: absolute;
+        top: 50%;
+        right: 50px;
+        transform: translateY(-50%);
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+    .calendar-tit ul{
+      display: flex;
+      color: #fff;
+      background-color: #5E90F1;
+      padding: 10px;
+      position: fixed;
+      width: 100%;
+    }
+    .calendar-tit ul li{
+      width: calc((100% - 10px) / 7);
+      font-size: 1.2rem;
+    }
+    .open-btn{margin-top: 100px;}

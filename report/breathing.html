@@ -14,19 +14,19 @@
 </head>
 <body>
   <div id="wrap">
-     <div class="bezel">
+    <div class="bezel">
       <ul class="pushbar">
         <li>9:30</li>
         <li></li>
         <li></li>
        </ul>
      <div class="gesturebar"></div>
-   </div><!-- .bezel -->
+    </div><!-- .bezel -->
     <header>
       <div class="prev-btn">
          <a href="healthreport.html"></a>
       </div>
-      <h1>호홉 세부정보</h1>
+      <h1>호흡 세부정보</h1>
     </header>
     <section id="breath">
       <ul class="name">
@@ -43,8 +43,8 @@
                 <div class="left">
                   <div class="top breath_top">
                     <dl>
-                      <dt><span>90</span>점</dt>
-                      <dd>정상</dd>
+                      <dt class="gray"><span class="bold">90</span>점</dt>
+                      <dd class="thin">정상</dd>
                     </dl>
                   </div>
                   <dl class="mid">
@@ -53,7 +53,7 @@
                     <dd>산소포화도 <span>98</span>%</dd>
                   </dl>
                 </div>
-                <div class="calendar"><img src="../img/main_img/calendar.png" alt="calendar"></div>
+                <div class="calendar "><img src="../img/main_img/calendar.png" alt="calendar" onclick="laypopId(dayModal)"></div>
               </li>
               <li>분당호흡수 <img src="../img/report_img/breath1.png" alt="호흡1"></li>
               <li>산소포화도 <img src="../img/report_img/breath2.png" alt="호흡2"></li>
@@ -109,8 +109,8 @@
                 <div class="left">
                   <div class="top breath_top">
                     <dl>
-                      <dt><span>89</span>점</dt>
-                      <dd>정상</dd>
+                      <dt class="gray"><span class="bold">89</span>점</dt>
+                      <dd class="thin">정상</dd>
                     </dl>
                   </div>
                   <dl class="mid">
@@ -119,7 +119,7 @@
                     <dd>산소포화도 <span>96</span>%</dd>
                   </dl>
                 </div>
-                <div class="calendar"><img src="../img/main_img/calendar.png" alt="calendar"></div>
+                <div class="calendar"><img src="../img/main_img/calendar.png" alt="calendar" onclick="laypopId(weekModal)"></div>
               </li>
               <li>분당호흡수 <img src="../img/report_img/breath3.png" alt="호흡3"></li>
               <li>산소포화도 <img src="../img/report_img/breath4.png" alt="호흡4"></li>
@@ -150,8 +150,8 @@
                 <div class="left">
                   <div class="top breath_top2">
                   <dl>
-                    <dt><span>87</span>점</dt>
-                    <dd>정상</dd>
+                    <dt class="gray"><span class="bold">87</span>점</dt>
+                    <dd class="thin">정상</dd>
                   </dl>
                 </div>
                 <dl class="mid">
@@ -160,7 +160,7 @@
                   <dd>산소포화도 <span>95</span>%</dd>
                 </dl>
                 </div>
-                <div class="calendar"><img src="../img/main_img/calendar.png" alt="calendar"></div>
+                <div class="calendar"><img src="../img/main_img/calendar.png" alt="calendar" onclick="laypopId(monthModal)"></div>
               </li>
               <li>분당호흡수 <img src="../img/report_img/breath5.png" alt="호흡3"></li>
               <li>산소포화도 <img src="../img/report_img/breath6.png" alt="호흡4"></li>
@@ -184,8 +184,83 @@
       </ul>
     </section>
   
-    <div class="modal-wrap">
-      
+    <div class="calendar-modal" id="dayModal">
+        <div class="calendar-modal-header">
+            <div class="tit">
+              <h1>2025년</h1>
+            </div>
+            <div class="modal-close">완료</div>
+             
+        </div>
+        <div class="calendar-modal-body">
+          <div class="calendar-tit">
+              <ul>
+                <li>일</li>
+                <li>월</li>
+                <li>화</li>
+                <li>수</li>
+                <li>목</li>
+                <li>금</li>
+                <li>토</li>
+              </ul>
+            </div>
+            <div class="calendar-img">
+              <img src="../img/calendar.png" alt="달력">
+            </div>
+        </div>
     </div>
+
+    <div class="calendar-modal" id="weekModal">
+        <div class="calendar-modal-header">
+            <div class="tit">
+              <h1>2026년</h1>
+            </div>
+            <div class="modal-close">완료</div>
+             
+        </div>
+        <div class="calendar-modal-body">
+          <div class="calendar-tit">
+              <ul>
+                <li>일</li>
+                <li>월</li>
+                <li>화</li>
+                <li>수</li>
+                <li>목</li>
+                <li>금</li>
+                <li>토</li>
+              </ul>
+            </div>
+            <div class="calendar-img">
+              <img src="../img/calendar_week.png" alt="달력">
+            </div>
+        </div>
+    </div>
+
+    <div class="calendar-modal" id="monthModal">
+        <div class="calendar-modal-header">
+            <div class="tit">
+              <h1>2026년</h1>
+            </div>
+            <div class="modal-close">완료</div>
+             
+        </div>
+        <div class="calendar-modal-body">
+          <div class="calendar-tit">
+              <ul>
+                <li>일</li>
+                <li>월</li>
+                <li>화</li>
+                <li>수</li>
+                <li>목</li>
+                <li>금</li>
+                <li>토</li>
+              </ul>
+            </div>
+            <div class="calendar-img">
+              <img src="../img/calendar_month.png" alt="달력">
+            </div>
+        </div>
+    </div>
+  </div>  
 </body>
 </html>
