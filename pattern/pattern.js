@@ -1,8 +1,22 @@
 $(document).ready(function(){
 
   // #calendar
-	$("#calendar .bottom ul.day li").click(function(){
+	$("#calendar.type-one .bottom ul.day li").click(function(){
     $(this).addClass("active").siblings().removeClass("active");
+  });
+
+
+  //달력 모달창
+  $('#calendar .top .icon').click(function(){
+    $("#dayModal").addClass('modal-open');
+  });
+
+  $('#dayModal .modal-close').click(function(){
+    $("#dayModal").removeClass('modal-open');
+  });
+
+  $("#calendar .top .icon").click(function(){
+    $("#dayModal .calendar-modal-body").scrollTop(350);
   });
 
 
@@ -17,6 +31,23 @@ $(document).ready(function(){
   $("#tit form .tit-icon .color").click(function(){
     $(".color-box").fadeToggle();
   })
+
+
+
+
+  // 일정 추가
+  // 달력 모달창
+  $('#time .setting .day').click(function(){
+    $("#dayModal").addClass('modal-open');
+  });
+  
+  $('#dayModal .modal-close').click(function(){
+    $("#dayModal").removeClass('modal-open');
+  });
+
+  $("#calendar .top .icon").click(function(){
+    $("#dayModal .calendar-modal-body").scrollTop(350);
+  });
 
 
   //.timeset
@@ -98,7 +129,7 @@ $(document).ready(function(){
     //centeredSlides: true,
   });
 
-  $("#repeat .month .month-slide li").removeClass("active");
+  $("#repeat .month .month-slide .active").hide();
   $("#repeat .month .month-slide li").click(function(){
     if($(this).hasClass("active") === true){
       $(this).removeClass("active");
@@ -122,4 +153,97 @@ $(document).ready(function(){
   })
 
 
+
+  // 일정 관리
+  // 탭 메뉴
+  $(".item > ul > li").not(":first").hide();
+  $(".option ul li").click(function(){
+    $(this).addClass("active").siblings().removeClass("active")
+
+    let idx = $(this).index();
+    $(".item > ul > li").eq(idx).show().siblings().hide();
+  })
+
+
+  // 달력 모달창
+  $('#time .setting .day').click(function(){
+    $("#dayModal").addClass('modal-open');
+  });
+  
+  $('#dayModal .modal-close').click(function(){
+    $("#dayModal").removeClass('modal-open');
+  });
+
+  $("#calendar .top .icon").click(function(){
+    $("#dayModal .calendar-modal-body").scrollTop(350);
+  });
+
+  //캘린더
+  $("#calendar.type-all .bottom ul.day li").click(function(){
+
+    if($(this).hasClass("active") === true) {
+    // class가 존재함.
+    $(this).removeClass("active");
+
+    } else {
+    // class가 존재하지 않음	
+    
+    $("#calendar.type-all .bottom ul.day li").removeClass("active");
+    $(this).addClass("active");
+    }
+
+   // $(this).addClass("active").siblings().removeClass("active");
+   // $(this).parents("#calendar .bottom ul.day").find("li").removeClass("active");
+  });
+  
+  
+  //일정 삭제
+  $("#schedule .trash").click(function(){
+    $(this).parents("#box").hide();
+  })
+
+
+  // 매주반복
+  $("#re-week > ul .no-repeat").hide();
+  $(".mon").click(function(){
+    $(this).find(".no-repeat").slideToggle();
+  })
+
+  $("#re-week > ul #schedule").hide();
+  $(".tue").click(function(){
+    $(this).find("#schedule").slideToggle();
+  })
+
+  $("#re-week > ul .no-repeat").hide();
+  $(".wed").click(function(){
+    $(this).find(".no-repeat").slideToggle();
+  })
+
+  $("#re-week > ul #schedule").hide();
+  $(".thu").click(function(){
+    $(this).find("#schedule").slideToggle();
+  })
+
+  $("#re-week > ul .no-repeat").hide();
+  $(".fri").click(function(){
+    $(this).find(".no-repeat").slideToggle();
+    $(this).fine(".arrow").rotate(180)
+  })
+
+  $("#re-week > ul .no-repeat").hide();
+  $(".sat").click(function(){
+    $(this).find(".no-repeat").slideToggle();
+    $(this).fine(".arrow").rotate(180)
+  })
+
+  $("#re-week > ul .no-repeat").hide();
+  $(".sun").click(function(){
+    $(this).find(".no-repeat").slideToggle();
+    $(this).fine(".arrow").rotate(180)
+  })
+
+  $("#re-month > ul #schedule").hide();
+  $("#re-month > ul").click(function(){
+    $(this).find("#schedule").slideToggle();
+  })
 })
