@@ -50,7 +50,7 @@
                     <dd>최고/최저 <span>120/70</span>bpm</dd>
                   </dl>
                 </div>
-                <div class="calendar"><img src="../img/main_img/calendar.png" alt="calendar"></div>
+                <div class="calendar"><img src="../img/main_img/calendar.png" alt="calendar" onclick="laypopId(dayModal)"></div>
               </li>
               <li class="graph"><img src="../img/report_img/report_06.png" alt="심박"></li>
 
@@ -101,7 +101,7 @@
                     <dd>최고/최저 <span>126/74</span>bpm</dd>
                   </dl>
                 </div>
-                <div class="calendar"><img src="../img/main_img/calendar.png" alt="calendar"></div>
+                <div class="calendar"><img src="../img/main_img/calendar.png" alt="calendar" onclick="laypopId(weekModal)"></div>
               </li>
               <li class="graph"><img src="../img/report_img/report_07.png" alt="심박"></li>
             </ul>
@@ -138,7 +138,7 @@
                     <dd>최고/최저 <span>120/68</span>bpm</dd>
                   </dl>
                 </div>
-                <div class="calendar"><img src="../img/main_img/calendar.png" alt="calendar"></div>
+                <div class="calendar"><img src="../img/main_img/calendar.png" alt="calendar" onclick="laypopId(monthModal)"></div>
               </li>
               <li class="graph"><img src="../img/report_img/report_09.png" alt="심박"></li>
 
@@ -160,6 +160,84 @@
         </li>
       </ul>
     </section>
+
+        <div class="calendar-modal" id="dayModal">
+        <div class="calendar-modal-header">
+            <div class="tit">
+              <h1>2025년</h1>
+            </div>
+            <div class="modal-close">완료</div>
+             
+        </div>
+        <div class="calendar-modal-body">
+          <div class="calendar-tit">
+              <ul>
+                <li>일</li>
+                <li>월</li>
+                <li>화</li>
+                <li>수</li>
+                <li>목</li>
+                <li>금</li>
+                <li>토</li>
+              </ul>
+            </div>
+            <div class="calendar-img">
+              <img src="../img/calendar.png" alt="달력">
+            </div>
+        </div>
+    </div>
+
+    <div class="calendar-modal" id="weekModal">
+        <div class="calendar-modal-header">
+            <div class="tit">
+              <h1>2026년</h1>
+            </div>
+            <div class="modal-close">완료</div>
+             
+        </div>
+        <div class="calendar-modal-body">
+          <div class="calendar-tit">
+              <ul>
+                <li>일</li>
+                <li>월</li>
+                <li>화</li>
+                <li>수</li>
+                <li>목</li>
+                <li>금</li>
+                <li>토</li>
+              </ul>
+            </div>
+            <div class="calendar-img">
+              <img src="../img/calendar_week.png" alt="달력">
+            </div>
+        </div>
+    </div>
+
+    <div class="calendar-modal" id="monthModal">
+        <div class="calendar-modal-header">
+            <div class="tit">
+              <h1>2026년</h1>
+            </div>
+            <div class="modal-close">완료</div>
+             
+        </div>
+        <div class="calendar-modal-body">
+          <div class="calendar-tit">
+              <ul>
+                <li>일</li>
+                <li>월</li>
+                <li>화</li>
+                <li>수</li>
+                <li>목</li>
+                <li>금</li>
+                <li>토</li>
+              </ul>
+            </div>
+            <div class="calendar-img">
+              <img src="../img/calendar_month.png" alt="달력">
+            </div>
+        </div>
+    </div>
   
 </body>
 </html>
