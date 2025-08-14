@@ -56,7 +56,7 @@ header h1 {
 }
 
 .box-shadow {
-  box-shadow: 0 0 10px rgba(0,0,0,0.15);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
 }
 
 button {
@@ -132,6 +132,11 @@ button {
   height: 100%;
   object-fit: cover;
 }
+#profile .subject a .sub-name {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
 #profile .subject a .name {
   font-size: 1.6rem;
   font-weight: 700;
@@ -145,7 +150,6 @@ button {
   color: var(--main-color);
   border-radius: 20px;
   line-height: 1;
-  margin-left: 6px;
 }
 
 #profile .subject a .number {
@@ -323,6 +327,9 @@ button {
 .bottom-btn.down1 {
   bottom: -100px;
 }
+.bottom-btn.down2 {
+  bottom: -180px;
+}
 
 .bottom-btn a {
   width: 100%;
@@ -344,7 +351,7 @@ button {
 
 /* info */
 #info {
-  padding-bottom: 140px;
+  padding-bottom: 150px;
 }
 .input-box1 {
   font-weight: 600;
@@ -416,46 +423,54 @@ button {
 .gender > div {
   margin-top: 12px;
   display: flex;
+  justify-content: center;
 }
 .gender > div > div {
-  width: 50%;
+  width: 48%;
 }
 
-input[type="radio"] {
-  width: 0;
-  height: 0;
+.gender > div input[type="radio"] {
+  display: none;
 }
-input[type="radio"] + label {
+
+.gender > div label {
   display: inline-block;
-  position: relative;
-  min-height: 24px;
-  line-height: 24px;
-  padding-left: 35px;
-  color: #707070;
+  width: 100%;
+  cursor: pointer;
 }
-input[type="radio"] + label:after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 20px;
-  height: 20px;
-  border-radius: 5px;
-  background: #fff url("../../assets/login/w-check.png") no-repeat 50% 50%  /
+.gender > div label h6 {
+  font-weight: 500;
+  font-size: 1.6rem;
+  margin-left: 30px;
+}
+.gender > div label {
+  background: url(../img/mypage_img/Checkbox_off.png) no-repeat center left /
     contain;
-  border: 2px solid #5e90f1;
-  transition: all 0.5s;
+  background-size: 16px 16px;
 }
-input[type="radio"]:disabled + label:after {
-  background-color: #f2f2f2;
+
+.gender > div input[type="radio"]:checked + label {
+  background: url(../img/mypage_img/Checkbox_on.png) no-repeat center left /
+    contain;
+  background-size: 16px 16px;
 }
-input[type="radio"]:checked + label:after {
-  background-color: #5e90f1;
-}
-input[type="radio"] + label h6 {
+
+.input-box1 select {
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  height: 52px;
+  color: #333;
+  width: 100%;
+  padding: 0 16px;
+  margin-top: 12px;
+  color: #333333;
   font-size: 1.6rem;
   font-weight: 500;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url(../img/main_img/arrow.png) no-repeat center right 16px / contain;
+  background-size: 10px ;
 }
 
 /* #subscription */
@@ -495,7 +510,7 @@ input[type="radio"] + label h6 {
   margin-top: 30px;
 }
 
-#subscription > input[type="text"]  {
+#subscription > input[type="text"] {
   width: 100%;
   display: block;
   border-radius: 8px;
@@ -512,7 +527,8 @@ input[type="radio"] + label h6 {
 }
 
 /* subscription 오류 팝업 */
-.error, .confirm {
+.error,
+.confirm {
   position: fixed;
   max-width: 720px;
   width: 100%;
@@ -520,7 +536,7 @@ input[type="radio"] + label h6 {
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  background-color: rgba(29,29,29,0.5);
+  background-color: rgba(29, 29, 29, 0.5);
   z-index: 999999;
   display: none;
 }
@@ -610,7 +626,7 @@ input[type="radio"] + label h6 {
 }
 
 .guide-list .swiper-pagination-bullet {
-  background-color: rgba(0,0,0,0.2);
+  background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
   width: 8px;
   height: 8px;
