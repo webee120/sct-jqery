@@ -45,6 +45,10 @@
       if (document.referrer.includes("/mypage/main.html")) {
         $(".main .main-device .index-normal").show().siblings().hide();
       }
+      if (document.referrer.includes("/alert/thurs.html")) {
+        $(".main .main-device .index-normal").show().siblings().hide();
+      }
+
 
 
 
