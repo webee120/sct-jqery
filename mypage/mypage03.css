@@ -193,6 +193,10 @@ input[type="password"] {
   line-height: 52px;
   border-radius: 8px;
 }
+.pop-up button a{
+  display: block;
+  color: white;
+}
 
 .pop-up .btns {
   display: flex;

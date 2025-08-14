@@ -659,6 +659,10 @@ button {
   line-height: 52px;
   border-radius: 8px;
 }
+.pop-up button a{
+  display: block;
+  color: white;
+}
 .caution .pop-up .btns {
   display: flex;
   gap: 16px;
