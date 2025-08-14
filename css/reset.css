@@ -67,6 +67,7 @@ body{
   line-height: 1.4;
   letter-spacing: 0.01em; 
   color: #333;
+  font-weight: 400;
 }
 #wrap{
   overflow: scroll;
