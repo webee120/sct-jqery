@@ -325,10 +325,10 @@ button {
   width: 100%;
 }
 .bottom-btn.down1 {
-  bottom: -100px;
+  bottom: -230px;
 }
 .bottom-btn.down2 {
-  bottom: -180px;
+  bottom: -320px;
 }
 
 .bottom-btn a {
@@ -469,8 +469,9 @@ button {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  background: url(../img/main_img/arrow.png) no-repeat center right 16px / contain;
-  background-size: 10px ;
+  background: url(../img/main_img/arrow.png) no-repeat center right 16px /
+    contain;
+  background-size: 10px;
 }
 
 /* #subscription */
@@ -636,4 +637,15 @@ button {
   height: 8px;
   border-radius: 20px;
   background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* 기기관리 css 수정 */
+ul.channel .newregister > div:first-child h3::after{
+  content: "연결중";
+  font-size: 1.2rem;
+  color: var(--main-color);
+}
+
+ul.channel .newregister .addlist > li a > p {
+  color: #FF0000;
 }
